@@ -13,6 +13,7 @@ header {
   top: 0;
   position: sticky;
   position: -webkit-sticky;
+  z-index: 1;
 }
 
 .logo a {
@@ -87,6 +88,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* z-index: -2;  */
 }
 
 .intro p {
