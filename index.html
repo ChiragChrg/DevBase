@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev-Base</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mstyle.css" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
 
     <link
@@ -20,7 +21,7 @@
     />
   </head>
   <body>
-    <img class="clip-img" src="./assets/1.jpg" alt="Server-image" />
+    <!-- <img class="clipimg" src="./assets/1.jpg" alt="Server-image" /> -->
 
     <header>
       <div class="logo">
@@ -155,18 +156,28 @@
 
     <footer>
       <div class="social">
-        <a href="https://www.facebook.com/ChiragChrg" target="_blank" id="f">
+        <a href="#" id="f">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
-        <a href="https://www.instagram.com/chiragchrg/" target="_blank" id="i">
+        <a href="#" id="i">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="https://twitter.com/ChiragChrg1" target="_blank" id="t">
+        <a href="#" id="t">
           <i class="fab fa-twitter fa-2x"></i>
         </a>
       </div>
 
       <p>&#169; Copyright 2020 ChiragChrg</p>
     </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidepanel").style.width = "50%";
+      }
+
+      function closeNav() {
+        document.getElementById("sidepanel").style.width = "0%";
+      }
+    </script>
   </body>
 </html>
