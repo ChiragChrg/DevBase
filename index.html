@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev-Base</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mstyle.css" />
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="/css/light.css" id="theme" />
+    <link rel="stylesheet" href="/css/light-mobile.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -21,13 +21,13 @@
     />
   </head>
   <body>
-    <!-- <img class="clipimg" src="./assets/1.jpg" alt="Server-image" /> -->
+    <img class="clipimg" src="./assets/code.png" alt="Server-image" />
 
     <header>
       <div class="logo">
         <a href="https://devbase.netlify.app/">
           <i class="fas fa-code fa-2x">
-            <h4>&nbsp;Dev-Base</h4>
+            <h4>&nbsp;Dev Base</h4>
           </i>
         </a>
       </div>
@@ -49,9 +49,15 @@
             <li>
               <a class="active" href="/index.html">Home</a>
               <a href="#">About</a>
+
+              <div class="darkmode" id="toggle">
+                <img src="/assets/moon.svg" alt="Dark" width="42px" />
+              </div>
             </li>
           </ul>
         </div>
+
+        <div class="clip"></div>
       </div>
     </header>
 
@@ -156,22 +162,13 @@
 
     <footer>
       <div class="social">
-        <a 
-           href="https://www.facebook.com/ChiragChrg" 
-           id="f"
-           target="_blank">
+        <a href="https://www.facebook.com/ChiragChrg" id="f" target="_blank">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
-        <a 
-           href="https://www.instagram.com/chiragchrg/" 
-           id="i"
-           target="_blank">
+        <a href="https://www.instagram.com/chiragchrg/" id="i" target="_blank">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a 
-           href="https://twitter.com/ChiragChrg1" 
-           id="t"
-           target="_blank">
+        <a href="https://twitter.com/ChiragChrg1" id="t" target="_blank">
           <i class="fab fa-twitter fa-2x"></i>
         </a>
       </div>
@@ -179,14 +176,6 @@
       <p>&#169; Copyright 2020-2021 ChiragChrg</p>
     </footer>
 
-    <script>
-      function openNav() {
-        document.getElementById("sidepanel").style.width = "50%";
-      }
-
-      function closeNav() {
-        document.getElementById("sidepanel").style.width = "0%";
-      }
-    </script>
+    <script src="/app.js"></script>
   </body>
 </html>
