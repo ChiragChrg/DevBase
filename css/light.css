@@ -39,7 +39,7 @@
     position: -webkit-sticky;
     z-index: 1;
     background-color: #fff;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     padding-right: 8%;
   }
 
@@ -99,7 +99,6 @@
     color: #fff;
   }
 
-  /* Dark Mode Toggle */
   .darkmode {
     position: absolute;
     display: flex;
@@ -111,8 +110,6 @@
     cursor: pointer;
     transition: 0.4s ease-in-out;
   }
-
-  /* Dark Mode Toggle */
 
   .container {
     position: relative;
@@ -141,7 +138,7 @@
   }
 
   .intro:hover {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     border-radius: 15px;
   }
 
@@ -225,7 +222,7 @@
   .tile5:hover,
   .tile6:hover {
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 
   .tile1 a,
@@ -320,7 +317,7 @@
 
   .social a:hover {
     transform: rotate(360deg);
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.3);
   }
 
   #f {
