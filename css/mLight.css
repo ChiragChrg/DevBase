@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
+  }
+
+  #mTheme {
     transition: 0.5s ease-in-out;
   }
 
@@ -298,11 +301,11 @@
     justify-content: center;
   }
 
-  /* .tile6 a i {
-    color: rgb(6, 122, 255);
+  .tile6 a i {
+    color: #6600ff;
     display: flex;
     justify-content: center;
-  } */
+  }
 
   .tile1 a p,
   .tile2 a p,

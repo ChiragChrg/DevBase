@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
-    transition: 0.5s ease-in-out;
   }
+
+  /* html {
+    transition: 5s ease-in-out;
+  } */
 
   body {
     background-color: #006eff;
@@ -123,6 +126,7 @@
     margin-top: -15%;
     clip-path: polygon(0% 28%, 100% 38%, 100% 100%, 0% 100%);
     background-color: #1d1d1d;
+    /* background-image: url(../assets/texture.png); */
     /* z-index: -1; */
     /* border: 2px solid black; */
   }
@@ -271,11 +275,11 @@
     justify-content: center;
   }
 
-  /* .tile6 a i {
-    color: rgb(6, 122, 255);
+  .tile6 a i {
+    color: #6600ff;
     display: flex;
     justify-content: center;
-  } */
+  }
 
   .tile1 a p,
   .tile2 a p,

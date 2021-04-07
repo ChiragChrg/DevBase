@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
-    transition: 0.5s ease-in-out;
   }
+
+  /* html {
+    transition: 0.5s ease-in-out;
+  } */
 
   body {
     background-color: #006eff;
@@ -268,11 +271,11 @@
     justify-content: center;
   }
 
-  /* .tile6 a i {
-  color: rgb(6, 122, 255);
-  display: flex;
-  justify-content: center;
-} */
+  .tile6 a i {
+    color: #6600ff;
+    display: flex;
+    justify-content: center;
+  }
 
   .tile1 a p,
   .tile2 a p,
