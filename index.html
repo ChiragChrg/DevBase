@@ -1,176 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<link lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Base</title>
-    <link rel="stylesheet" href="/css/light.css" id="theme" />
-    <link rel="stylesheet" href="/css/mLight.css" id="mTheme" />
-    <link rel="shortcut icon" href="./assets/favicon.png" />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-
+    <title>Film Stack</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mstyle.css" />
+    <script src="/js/icon.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
   </head>
-  <body>
-    <img class="clipimg" src="./assets/Coder.svg" alt="Server-image" />
 
+  <body>
+    <div class="searchload"><img class="sLoading" src="/assets/fsico.png" alt="Loading"></div>
+    
     <header>
       <div class="logo">
-        <a href="https://devbase.netlify.app/">
-          <i class="fas fa-code fa-2x">
-            <h4>&nbsp;Dev Base</h4>
-          </i>
+        <a href="https://filmstack.netlify.app">
+          <i class="fal fa-camera-movie fa-3x"></i>
+          <p>&nbsp;FilmStack</p>
         </a>
       </div>
 
-      <div class="navham">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div class="navmain">
+        <button class="openbtn" onclick="openNav()"><i class="far fa-bars"></i></button>
       </div>
 
       <div class="nav">
-        <div id="sidepanel" class="sidebar">
-          <a
-            href="javascript:void(0)"
-            id="closebtn"
-            class="closebtn"
-            onclick="closeNav()"
-            >&times;</a
-          >
+        <div class="sidebar" id="sidepanel">
+          <a href="javascript:void(0)" onclick="closeNav()" class="closebtn"
+            >&times;</a>
           <ul>
             <li>
-              <a class="active" href="/index.html">Home</a>
-              <a href="/about.html">About</a>
-
-              <div class="darkmode" id="toggle">
-                <img
-                  id="Dark-icon"
-                  src="/assets/moon.svg"
-                  alt="Dark"
-                  width="42px"
-                />
-              </div>
+              <a class="active" href="https://filmstack.netlify.app">Home</a>
+              <a href="./about.html">About</a>
+              <a href="https://devbase.netlify.app">DevBase</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <div class="container">
-      <div class="intro">
-        <p>
-          Hello,<br />
-          I'm Chirag, a prospective developer. <br />
-          I try to create exciting Webapps. <br />
-          All of my projects are Open-Source, So Enjoy! <br />
-        </p>
-        <a href="https://github.com/ChiragChrg" target="_blank">
-          <i class="fab fa-github fa-2x"></i>
-          <h2>&nbsp;GitHub</h2>
-        </a>
+    <div class="content">
+      <div id="searchbar">
+        <input
+          type="text"
+          value=""
+          placeholder="Search Film"
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='Search Film'"
+        />
       </div>
-
-      <div class="myapps">
-        <div class="app-title">
-          <p>MY PROJECTS <br /></p>
+  
+      <div class="container">
+        <div class="cards">
+          <div class="card1"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card2"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card3"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card4"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card5"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card6"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card7"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card8"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card9"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
+          <div class="card10"><img class="loading" src="/assets/loading.png" alt="Loading"></div>
         </div>
 
-        <div class="tiles">
-          <div class="tile6">
-            <a href="https://daysbeyond.netlify.app/" target="_blank">
-              <i class="far fa-calendar-alt fa-5x"></i>
-              <h4><br />Days Beyond</h4>
-              <p>
-                Shows Yearly Progress<br />
-                and Daily Events held globally. <br />
-                Check what's Special Today!
-              </p>
-            </a>
-          </div>
-
-          <div class="tile1">
-            <a href="https://covidtrax.netlify.app/" target="_blank">
-              <i class="fas fa-shield-virus fa-5x"></i>
-              <h4><br />CovidTrax</h4>
-              <p>
-                Search global COVID-19 <br />
-                statistics for each Country and <br />
-                Indian States and Districts
-              </p>
-            </a>
-          </div>
-
-          <div class="tile2">
-            <a href="https://cookeez.netlify.app/" target="_blank">
-              <i class="fas fa-cookie-bite fa-5x"></i>
-              <h4><br />Cookeez</h4>
-              <p>
-                Find your favorite<br />
-                dishes along with the <br />
-                ingredients for the recipe
-              </p>
-            </a>
-          </div>
-
-          <div class="tile3">
-            <a href="https://klimate.netlify.app/" target="_blank">
-              <i class="far fa-sun fa-5x"></i>
-              <h4><br />CliMate</h4>
-              <p>
-                Get Weather Updates for <br />
-                any location along with <br />
-                Geolocation Support.
-              </p>
-            </a>
-          </div>
-
-          <div class="tile4">
-            <a href="https://nuklearbrain.netlify.app/" target="_blank">
-              <img
-                src="./assets/nuklearbrain.png"
-                alt="nuklearbrain"
-                width="82px"
-              />
-              <h4><br />Nuklear Brain</h4>
-              <p>
-                A simple blog with <br />
-                basic interaction elements <br />
-                : )
-              </p>
-            </a>
-          </div>
-
-          <div class="tile5">
-            <a href="https://kalci.netlify.app/" target="_blank">
-              <i class="fas fa-square-root-alt fa-5x"></i>
-              <h4><br />Kalci</h4>
-              <p>
-                A simple Calculator <br />
-                for basic Calcuations <br />
-                : D
-              </p>
-            </a>
-          </div>
-
-          <!-- <div class="tile6">
-            <a href="#" target="_blank">
-              <i class="fab fa-github fa-5x"></i>
-              <h4><br />CliMate</h4>
-              <p>
-                Search global COVID-19 <br />
-                statistics for each Country and <br />
-                Indian States and Districts
-              </p>
-            </a>
-          </div> -->
+        <div class="searchInfo">
+          <div class="poster">Poster</div>
+          <div class="title">Title</div>
+          <div class="rated">N/A Rated</div>
+          <div class="ratings">Ratings</div>
+          <div class="year">Year</div>
+          <div class="release">Release</div>
+          <div class="director">Director</div>
+          <div class="writer">Writer</div>
+          <div class="genre">Genre</div>
+          <div class="lang">Language</div>
+          <div class="country">Country</div>
+          <div class="actors">Actors</div>
+          <div class="plot">Plot</div>
+          <div class="awards">Awards</div>
         </div>
       </div>
     </div>
@@ -188,9 +102,9 @@
         </a>
       </div>
 
-      <p>&#169; Copyright 2020-2021 ChiragChrg</p>
+      <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
 
-    <script src="/js/app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
