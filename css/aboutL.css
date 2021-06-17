@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
+  }
+
+  #abtTheme {
     transition: 0.5s ease-in-out;
   }
 
@@ -210,6 +213,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
+  }
+
+  #abtTheme {
     transition: 0.5s ease-in-out;
   }
 

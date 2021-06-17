@@ -213,7 +213,8 @@
   .tile3,
   .tile4,
   .tile5,
-  .tile6 {
+  .tile6,
+  .tile7 {
     /* border: 1px solid black; */
     float: left;
     width: 30%;
@@ -227,7 +228,8 @@
   .tile3:hover,
   .tile4:hover,
   .tile5:hover,
-  .tile6:hover {
+  .tile6:hover,
+  .tile7:hover {
     border-radius: 10px;
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
   }
@@ -237,7 +239,8 @@
   .tile3 a,
   .tile4 a,
   .tile5 a,
-  .tile6 a {
+  .tile6 a,
+  .tile7 a {
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -281,12 +284,19 @@
     justify-content: center;
   }
 
+  .tile7 a i {
+    color: #2b4eec;
+    display: flex;
+    justify-content: center;
+  }
+
   .tile1 a p,
   .tile2 a p,
   .tile3 a p,
   .tile4 a p,
   .tile5 a p,
-  .tile6 a p {
+  .tile6 a p,
+  .tile7 a p {
     margin-top: 2%;
   }
 
@@ -329,17 +339,17 @@
   }
 
   #f {
-    padding: 10px;
+    padding: 12px 12px 10px 12px;
     color: #2054c4;
   }
 
   #i {
-    padding: 10px 12px;
+    padding: 12px 12px 10px 12px;
     color: #e21157;
   }
 
   #t {
-    padding: 10px;
+    padding: 12px 11px 10px 11px;
     color: #0bb0f1;
   }
 }
