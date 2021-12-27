@@ -210,7 +210,8 @@
   .tile4,
   .tile5,
   .tile6,
-  .tile7 {
+  .tile7,
+  .tile8 {
     /* border: 1px solid black; */
     float: left;
     width: 30%;
@@ -225,7 +226,8 @@
   .tile4:hover,
   .tile5:hover,
   .tile6:hover,
-  .tile7:hover {
+  .tile7:hover,
+  .tile8:hover {
     border-radius: 10px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
@@ -236,7 +238,8 @@
   .tile4 a,
   .tile5 a,
   .tile6 a,
-  .tile7 a {
+  .tile7 a,
+  .tile8 a {
     color: #000;
     text-decoration: none;
     text-align: center;
@@ -286,13 +289,20 @@
     justify-content: center;
   }
 
+  .tile8 a i {
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+  }
+
   .tile1 a p,
   .tile2 a p,
   .tile3 a p,
   .tile4 a p,
   .tile5 a p,
   .tile6 a p,
-  .tile7 a p {
+  .tile7 a p,
+  .tile8 a p {
     margin-top: 2%;
   }
 
