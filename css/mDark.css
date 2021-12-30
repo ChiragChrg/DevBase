@@ -137,8 +137,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 230%;
-    margin-top: -90%;
+    padding-top: 280%;
+    margin-top: -150%;
     clip-path: polygon(0% 28%, 100% 32%, 100% 100%, 0% 100%);
     background-color: #1d1d1d;
   }
