@@ -1,0 +1,330 @@
+/* --------------------------- Mobile Responsive --------------------------- */
+@media (max-width: 395px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+  }
+
+  #mTheme {
+    transition: 0.5s ease-in-out;
+  }
+
+  body {
+    background-color: dodgerblue;
+  }
+
+  .clipimg {
+    width: 90%;
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow-y: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 4%;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #1d1d1d;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: dodgerblue;
+    cursor: pointer;
+  }
+
+  .navham {
+    display: flex;
+    position: absolute;
+    right: 7%;
+    top: -1%;
+    height: 100%;
+  }
+
+  .openbtn {
+    outline-style: none;
+    border: none;
+    background: none;
+    font-size: 35px;
+    font-weight: 900;
+    color: dodgerblue;
+  }
+
+  #closebtn {
+    position: absolute;
+    top: -2%;
+    right: 13.5%;
+    font-size: 75px;
+    color: dodgerblue;
+  }
+
+  .closebtn {
+    font-size: 60px;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    right: 20px;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: #1d1d1d;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  .sidebar ul li {
+    padding-top: 80px;
+  }
+
+  .sidebar ul li a {
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: dodgerblue;
+    display: block;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+  }
+
+  .sidebar a.active {
+    color: #fff;
+    background-color: dodgerblue;
+  }
+
+  .toggleHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    position: relative;
+  }
+
+  #toggle {
+    font-size: 3em;
+    cursor: pointer;
+    color: gold;
+    position: absolute;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 280%;
+    margin-top: -150%;
+    clip-path: polygon(0% 28%, 100% 32%, 100% 100%, 0% 100%);
+    background-color: #1d1d1d;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50% 6% 0 6%;
+    padding: 3% 5% 6% 5%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  .intro p {
+    padding: 2%;
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+
+  .intro a {
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 2% 4%;
+    border-radius: 0px 55px 10px 35px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .myapps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  .app-title p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding: 2% 0;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    color: #fff;
+  }
+
+  .tiles {
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 2%;
+  }
+
+  .tile {
+    width: 90%;
+    padding: 8% 3%;
+    margin: 4% 3%;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .tile a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .t1 a i {
+    color: rgb(20, 73, 134);
+    display: flex;
+    justify-content: center;
+  }
+
+  .t2 a {
+    /* color: rgb(143, 55, 14); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .t3 a i {
+    color: rgb(255, 155, 6);
+    display: flex;
+    justify-content: center;
+  }
+
+  .t4 a i {
+    color: rgb(143, 55, 14);
+    display: flex;
+    justify-content: center;
+  }
+
+  .t5 a i {
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .t6 a i {
+    color: #6600ff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .t7 a i {
+    color: #2b4eec;
+    display: flex;
+    justify-content: center;
+  }
+
+  .t8 a i {
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tile a p {
+    margin-top: 2%;
+  }
+
+  footer {
+    /* border: 5px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    padding: 5%;
+    margin-top: -0.5%;
+  }
+
+  footer p {
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding: 2% 0;
+    color: #fff;
+  }
+
+  .social {
+    /* background-color: rgb(167, 22, 22); */
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .social a {
+    /* transition: 0.5s ease-in-out; */
+    text-decoration: none;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.4); */
+  }
+
+  /* .social a:hover {
+      transform: rotate(360deg);
+      box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+    } */
+
+  #f {
+    padding: 12px 12px 10px 12px;
+    color: #2054c4;
+  }
+
+  #i {
+    padding: 12px 12px 10px 12px;
+    color: #e21157;
+  }
+
+  #t {
+    padding: 12px 11px 10px 11px;
+    color: #0bb0f1;
+  }
+}

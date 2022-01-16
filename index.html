@@ -4,33 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Base</title>
+    <!-- <link rel="stylesheet" href="./css/style.css" id="theme" /> -->
     <link rel="stylesheet" href="./css/light.css" id="theme" />
-    <link rel="stylesheet" href="./css/mLight.css" id="mTheme" />
+    <link rel="stylesheet" href="./css/Mobile/mLight.css" id="mTheme" />
     <link rel="shortcut icon" href="./assets/favicon.png" />
-    <!-- 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    /> -->
-
     <script src="./js/icon.js" crossorigin="anonymous"></script>
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
   </head>
+
   <body>
     <img class="clipimg" src="./assets/Coder.svg" alt="Server-image" />
 
     <header>
       <div class="logo">
         <a href="https://devbase.netlify.app/">
-          <i class="fas fa-code fa-2x">
-            <h4>&nbsp;Dev Base</h4>
-          </i>
+          <i class="fas fa-code"></i>
+          <h4>&nbsp;Dev Base</h4>
         </a>
       </div>
 
@@ -51,14 +43,12 @@
             <li>
               <a class="active" href="/index.html">Home</a>
               <a href="/about.html">About</a>
-
-              <div class="darkmode" id="toggle">
-                <img
-                  id="Dark-icon"
-                  src="./assets/moon.svg"
-                  alt="Dark"
-                  width="42px"
-                />
+              <div
+                class="toggleHolder"
+                onclick="changeTheme()"
+                title="Turn On Dark Mode"
+              >
+                <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
               </div>
             </li>
           </ul>
@@ -71,7 +61,7 @@
         <p>
           Hello,<br />
           I'm Chirag, a prospective developer. <br />
-          I try to create exciting Webapps. <br />
+          I create exciting Webapps. <br />
           All of my projects are Open-Source, So Enjoy! <br />
         </p>
         <a href="https://github.com/ChiragChrg" target="_blank">
@@ -86,7 +76,7 @@
         </div>
 
         <div class="tiles">
-          <div class="tile8">
+          <div class="tile t8">
             <a href="https://sims-arms.000webhostapp.com/" target="_blank">
               <i class="fad fa-user-graduate fa-5x"></i>
               <h4><br />ARMS</h4>
@@ -98,9 +88,9 @@
             </a>
           </div>
 
-          <div class="tile7">
+          <div class="tile t7">
             <a href="https://filmstack.netlify.app/" target="_blank">
-              <i class="fal fa-camera-movie fa-5x"></i>
+              <i class="fad fa-camera-movie fa-5x"></i>
               <h4><br />FilmStack</h4>
               <p>
                 More info on your Fav Movie? <br />
@@ -110,9 +100,9 @@
             </a>
           </div>
 
-          <div class="tile6">
+          <div class="tile t6">
             <a href="https://daysbeyond.netlify.app/" target="_blank">
-              <i class="far fa-calendar-alt fa-5x"></i>
+              <i class="fad fa-calendar-alt fa-5x"></i>
               <h4><br />Days Beyond</h4>
               <p>
                 Shows Yearly Progress<br />
@@ -122,9 +112,9 @@
             </a>
           </div>
 
-          <div class="tile1">
+          <div class="tile t5">
             <a href="https://covidtrax.netlify.app/" target="_blank">
-              <i class="fas fa-shield-virus fa-5x"></i>
+              <i class="fad fa-shield-virus fa-5x"></i>
               <h4><br />CovidTrax</h4>
               <p>
                 Search global COVID-19 <br />
@@ -134,7 +124,7 @@
             </a>
           </div>
 
-          <div class="tile2">
+          <div class="tile t4">
             <a href="https://cookeez.netlify.app/" target="_blank">
               <i class="fas fa-cookie-bite fa-5x"></i>
               <h4><br />Cookeez</h4>
@@ -146,9 +136,9 @@
             </a>
           </div>
 
-          <div class="tile3">
+          <div class="tile t3">
             <a href="https://klimate.netlify.app/" target="_blank">
-              <i class="far fa-sun fa-5x"></i>
+              <i class="fad fa-sun fa-5x"></i>
               <h4><br />CliMate</h4>
               <p>
                 Get Weather Updates for <br />
@@ -158,7 +148,7 @@
             </a>
           </div>
 
-          <div class="tile4">
+          <div class="tile t2">
             <a href="https://nuklearbrain.netlify.app/" target="_blank">
               <img
                 src="./assets/nuklearbrain.png"
@@ -174,9 +164,9 @@
             </a>
           </div>
 
-          <div class="tile5">
+          <div class="tile t1">
             <a href="https://kalci.netlify.app/" target="_blank">
-              <i class="fas fa-square-root-alt fa-5x"></i>
+              <i class="fad fa-square-root-alt fa-5x"></i>
               <h4><br />Kalci</h4>
               <p>
                 A simple Calculator <br />
@@ -186,7 +176,7 @@
             </a>
           </div>
 
-          <!-- <div class="tile6">
+          <!-- <div class="tile t6">
             <a href="#" target="_blank">
               <i class="fab fa-github fa-5x"></i>
               <h4><br />CliMate</h4>

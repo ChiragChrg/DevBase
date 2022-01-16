@@ -8,37 +8,50 @@ function closeNav() {
 }
 
 // Dark mode Toggle
-const btn = document.querySelector("#toggle");
-const theme = document.querySelector("#theme");
-const mTheme = document.querySelector("#mTheme");
-const currentTheme = localStorage.getItem("mytheme");
+const Toggle = document.querySelector("#toggle");
+const ToggleHolder = document.querySelector(".toggleHolder");
 
-if (currentTheme == "dark") {
-  theme.href = "/css/dark.css";
-  mTheme.href = "/css/mDark.css";
-  btn.innerHTML = `<img id="Dark-icon" src="/assets/sun.svg" alt="Light" width="42px" />`;
+const Theme = document.querySelector("#theme");
+// const Root = document.documentElement.style;
+// const Root = getComputedStyle(Theme, ":root");
+// var Root = document.styleSheets[0].cssRules[0].style[0];
+// console.log(Root.getPropertyValue("--background"));
+// console.log(Root);
+
+var MobileTheme = document.querySelector("#mTheme");
+const CurrentTheme = localStorage.getItem("Theme");
+var SetTheme;
+
+if (CurrentTheme == "dark") {
+  Theme.href = "/css/dark.css";
+  MobileTheme.href = "/css/Mobile/mDark.css";
+  Toggle.className = "fad fa-lightbulb-on fa-2x";
+  ToggleHolder.title = "Turn On Light Mode";
   // console.log("dark-ganja");
 } else {
-  theme.href = "/css/light.css";
-  mTheme.href = "/css/mLight.css";
-  btn.innerHTML = `<img id="Dark-icon" src="/assets/moon.svg" alt="Light" width="42px" />`;
+  Theme.href = "/css/light.css";
+  MobileTheme.href = "/css/Mobile/mLight.css";
+  Toggle.className = "fad fa-lightbulb fa-2x";
+  ToggleHolder.title = "Turn On Dark Mode";
   // console.log("light-ganja");
 }
 
-btn.addEventListener("click", function () {
-  if (theme.getAttribute("href") == "/css/light.css") {
-    theme.href = "/css/dark.css";
-    mTheme.href = "/css/mDark.css";
-    mytheme = "dark";
-    btn.innerHTML = `<img id="Dark-icon" src="/assets/sun.svg" alt="Light" width="42px" />`;
+function changeTheme() {
+  if (Theme.getAttribute("href") == "/css/light.css") {
+    Theme.href = "/css/dark.css";
+    MobileTheme.href = "/css/Mobile/mDark.css";
+    SetTheme = "dark";
+    Toggle.className = "on fad fa-lightbulb-on fa-2x";
+    ToggleHolder.title = "Turn On Light Mode";
     // closeNav();
   } else {
-    theme.href = "/css/light.css";
-    mTheme.href = "/css/mLight.css";
-    mytheme = "light";
-    btn.innerHTML = `<img id="Dark-icon" src="/assets/moon.svg" alt="Dark" width="42px" />`;
+    Theme.href = "/css/light.css";
+    MobileTheme.href = "/css/Mobile/mLight.css";
+    SetTheme = "light";
+    Toggle.className = "off fad fa-lightbulb fa-2x";
+    ToggleHolder.title = "Turn On Dark Mode";
     // closeNav();
   }
 
-  localStorage.setItem("mytheme", mytheme);
-});
+  localStorage.setItem("Theme", SetTheme);
+}
