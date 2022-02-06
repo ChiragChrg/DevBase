@@ -158,10 +158,11 @@
     display: flex;
     justify-content: space-center;
     align-items: center;
-    color: #000;
+    color: #fff;
     background-color: dodgerblue;
     padding: 0.5em 0.5em;
     cursor: pointer;
+    border-radius: 5px;
   }
 
   .insIco {

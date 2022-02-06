@@ -20,7 +20,7 @@ self.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   deferredPrompt = e;
   showInstallButton();
-  console.log(`'beforeinstallprompt' event was fired.`);
+  // console.log(`'beforeinstallprompt' event was fired.`);
 });
 
 //On Install Button Click
@@ -31,7 +31,7 @@ installButton.addEventListener("click", async () => {
     hideInstallButton();
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
-    console.log(`User response to the install prompt: ${outcome}`);
+    // console.log(`User response to the install prompt: ${outcome}`);
     deferredPrompt = null;
   } else {
     alert("Prompt Failed");
@@ -42,7 +42,7 @@ installButton.addEventListener("click", async () => {
 self.addEventListener("appinstalled", () => {
   hideInstallButton();
   deferredPrompt = null;
-  console.log("PWA was installed");
+  // console.log("PWA was installed");
 });
 
 const buttonHolder = document.querySelector(".pwaButtonHolder");

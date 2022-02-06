@@ -51,13 +51,13 @@
 // });
 
 self.addEventListener("install", () => {
-  console.log(`Installing service worker`);
+  // console.log(`Installing service worker`);
 });
 
 self.addEventListener("activate", () => {
-  console.log(`Activating service worker`);
+  // console.log(`Activating service worker`);
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log(`fetching...${event.request.url}`);
+  // console.log(`fetching...${event.request.url}`);
 });
