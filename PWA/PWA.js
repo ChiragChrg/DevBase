@@ -13,25 +13,22 @@ if ("serviceWorker" in navigator) {
   console.log(`Service Worker is not supported in this browser.`);
 }
 
+const buttonHolder = document.querySelector(".pwaButtonHolder");
 //BeforeInstallPromptEvent
 let deferredPrompt;
 self.addEventListener("beforeinstallprompt", (e) => {
-  // console.log(e);
   e.preventDefault();
   deferredPrompt = e;
-  showInstallButton();
-  // console.log(`'beforeinstallprompt' event was fired.`);
+  buttonHolder.style.display = "flex";
 });
 
 //On Install Button Click
-// const installButton = document.querySelector(".pwaButton");
 const installButton = document.querySelector(".pwaButtonHolder .pwaButton");
 installButton.addEventListener("click", async () => {
   if (deferredPrompt) {
-    hideInstallButton();
+    buttonHolder.style.display = "none";
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
-    // console.log(`User response to the install prompt: ${outcome}`);
     deferredPrompt = null;
   } else {
     alert("Prompt Failed");
@@ -40,21 +37,12 @@ installButton.addEventListener("click", async () => {
 
 //Check App Installed
 self.addEventListener("appinstalled", () => {
-  hideInstallButton();
+  buttonHolder.style.display = "none";
   deferredPrompt = null;
-  // console.log("PWA was installed");
+  console.log("PWA was installed");
 });
 
-const buttonHolder = document.querySelector(".pwaButtonHolder");
-//Show/Hide Install Promotion
-function showInstallButton() {
-  buttonHolder.style.display = "flex";
-}
-
-function hideInstallButton() {
-  buttonHolder.style.display = "none";
-}
-
+//Close Button PWA
 function closePWA() {
   buttonHolder.style.display = "none";
 }
