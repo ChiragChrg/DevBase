@@ -23,10 +23,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
-  "scope": ".",
+  "start_url": "/?source=pwa",
   "prefer_related_applications": false,
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "description": "DevBase is a webapp which contains all the website links developed by ChiragChrg."
