@@ -1,10 +1,12 @@
 // Mobile Nav bar
 function openNav() {
   document.getElementById("sidepanel").style.width = "50%";
+  document.querySelector("body").style.overflow = "hidden";
 }
 
 function closeNav() {
   document.getElementById("sidepanel").style.width = "0%";
+  document.querySelector("body").style.overflow = "auto";
 }
 
 // Dark mode Toggle
