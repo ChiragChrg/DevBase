@@ -12,7 +12,7 @@
   }
 
   body {
-    background-color: dodgerblue;
+    background-color: #1e90ff;
   }
 
   .clipimg {
@@ -65,20 +65,13 @@
     color: dodgerblue;
   }
 
-  #closebtn {
+  .closebtn {
     position: absolute;
-    top: -2%;
-    right: 13.5%;
+    top: 0.3em;
+    right: 1.1em;
     font-size: 75px;
     color: dodgerblue;
-  }
-
-  .closebtn {
-    font-size: 60px;
     text-decoration: none;
-    position: relative;
-    top: 0;
-    right: 20px;
   }
 
   .sidebar {
@@ -128,6 +121,58 @@
     cursor: pointer;
     color: gold;
     position: absolute;
+  }
+
+  .deskPwa {
+    display: none !important;
+  }
+
+  .pwaButtonHolder {
+    position: absolute;
+    left: 0;
+    top: 4.2em;
+    width: 100%;
+    padding: 0.5em 0.6em;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    color: #000;
+  }
+
+  .closePwa {
+    text-decoration: none;
+    font-size: 3em;
+    padding: 0 0.2em;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .txtPwa {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .pwaButton {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    color: #000;
+    background-color: dodgerblue;
+    padding: 0.5em 0.5em;
+    cursor: pointer;
+  }
+
+  .insIco {
+    padding-top: 0.1em;
+    font-size: 20px;
+  }
+
+  .insTxt {
+    margin-left: 0.6em;
+    font-weight: 600;
+    letter-spacing: 1.1px;
   }
 
   .container {

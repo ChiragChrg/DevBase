@@ -122,6 +122,41 @@
     position: absolute;
   }
 
+  .mobPwa {
+    display: none !important;
+  }
+
+  .pwaButton {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin-left: 2em;
+    background-color: dodgerblue;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50px;
+  }
+
+  .pwaButton:hover {
+    border: 1px solid dodgerblue;
+    background-color: #1d1d1d;
+    color: dodgerblue;
+    box-shadow: 0 0px 15px 0 dodgerblue;
+  }
+
+  .insIco {
+    padding-top: 0.1em;
+    font-size: 20px;
+  }
+
+  .insTxt {
+    margin-left: 0.6em;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+  }
+
   .container {
     position: relative;
     display: flex;

@@ -1,0 +1,33 @@
+{
+  "short_name": "DevBase",
+  "name": "DevBase",
+  "icons": [
+    {
+      "src": "/PWA/icons/72.png",
+      "sizes": "72x72",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/PWA/icons/144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/PWA/icons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/PWA/icons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "scope": ".",
+  "prefer_related_applications": false,
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "DevBase is a webapp which contains all the website links developed by ChiragChrg."
+}

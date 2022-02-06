@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
+    <link rel="manifest" href="manifest.json" />
   </head>
 
   <body>
@@ -50,10 +51,31 @@
               >
                 <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
               </div>
+              <div class="deskPwa" style="display: none">
+                <div class="pwaButton">
+                  <!-- <i class="far fa-plus-circle insIco"></i> -->
+                  <i class="far fa-sign-in insIco"></i>
+                  <p class="insTxt">Install</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
+      <!-- PWA Install Button -->
+      <div class="mobPwa" style="display: none">
+        <a href="javascript:void(0)" class="closePwa" onclick="closePWA()"
+          >&times;</a
+        >
+        <p class="txtPwa">
+          Get our Free app. It wont take up space on your Phone.
+        </p>
+        <div class="pwaButton">
+          <i class="far fa-sign-in insIco"></i>
+          <p class="insTxt">Install</p>
+        </div>
+      </div>
+      <!-- PWA Install Button -->
     </header>
 
     <div class="container">
@@ -64,7 +86,7 @@
           I create exciting Webapps. <br />
           All of my projects are Open-Source, So Enjoy! <br />
         </p>
-        <a href="https://github.com/ChiragChrg" target="_blank">
+        <a href="https://github.com/ChiragChrg">
           <i class="fab fa-github fa-2x"></i>
           <h2>&nbsp;GitHub</h2>
         </a>
@@ -77,7 +99,7 @@
 
         <div class="tiles">
           <div class="tile t8">
-            <a href="https://sims-arms.000webhostapp.com/" target="_blank">
+            <a href="https://sims-arms.000webhostapp.com/">
               <i class="fad fa-user-graduate fa-5x"></i>
               <h4><br />ARMS</h4>
               <p>
@@ -89,7 +111,7 @@
           </div>
 
           <div class="tile t7">
-            <a href="https://filmstack.netlify.app/" target="_blank">
+            <a href="https://filmstack.netlify.app/">
               <i class="fad fa-camera-movie fa-5x"></i>
               <h4><br />FilmStack</h4>
               <p>
@@ -101,7 +123,7 @@
           </div>
 
           <div class="tile t6">
-            <a href="https://daysbeyond.netlify.app/" target="_blank">
+            <a href="https://daysbeyond.netlify.app/">
               <i class="fad fa-calendar-alt fa-5x"></i>
               <h4><br />Days Beyond</h4>
               <p>
@@ -113,7 +135,7 @@
           </div>
 
           <div class="tile t5">
-            <a href="https://covidtrax.netlify.app/" target="_blank">
+            <a href="https://covidtrax.netlify.app/">
               <i class="fad fa-shield-virus fa-5x"></i>
               <h4><br />CovidTrax</h4>
               <p>
@@ -125,7 +147,7 @@
           </div>
 
           <div class="tile t4">
-            <a href="https://cookeez.netlify.app/" target="_blank">
+            <a href="https://cookeez.netlify.app/">
               <i class="fas fa-cookie-bite fa-5x"></i>
               <h4><br />Cookeez</h4>
               <p>
@@ -137,7 +159,7 @@
           </div>
 
           <div class="tile t3">
-            <a href="https://klimate.netlify.app/" target="_blank">
+            <a href="https://klimate.netlify.app/">
               <i class="fad fa-sun fa-5x"></i>
               <h4><br />CliMate</h4>
               <p>
@@ -149,7 +171,7 @@
           </div>
 
           <div class="tile t2">
-            <a href="https://nuklearbrain.netlify.app/" target="_blank">
+            <a href="https://nuklearbrain.netlify.app/">
               <img
                 src="./assets/nuklearbrain.png"
                 alt="nuklearbrain"
@@ -165,7 +187,7 @@
           </div>
 
           <div class="tile t1">
-            <a href="https://kalci.netlify.app/" target="_blank">
+            <a href="https://kalci.netlify.app/">
               <i class="fad fa-square-root-alt fa-5x"></i>
               <h4><br />Kalci</h4>
               <p>
@@ -207,6 +229,18 @@
       <p>&#169; Copyright 2020-2021 ChiragChrg</p>
     </footer>
 
+    <script>
+      //Switch Dektop/Moblie Buttons
+      const mediaQuery = window.matchMedia("(max-width: 395px)");
+      const DesktopInstall = document.querySelector(".deskPwa");
+      const MobileInstall = document.querySelector(".mobPwa");
+      if (mediaQuery.matches) {
+        MobileInstall.classList.toggle("pwaButtonHolder");
+      } else {
+        DesktopInstall.classList.toggle("pwaButtonHolder");
+      }
+    </script>
     <script src="/js/app.js"></script>
+    <script src="/PWA/PWA.js"></script>
   </body>
 </html>
