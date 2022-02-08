@@ -42,7 +42,7 @@
 
   .logo a i {
     display: inline-flex;
-    color: #3c57e8;
+    color: dodgerblue;
   }
 
   .navham {
@@ -70,24 +70,24 @@
     text-decoration: none;
     padding: 7px 25px;
     margin: 0 10px;
-    color: #3c57e8;
+    color: dodgerblue;
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 0.5px;
     border-radius: 50px;
     /* background-color: #000; */
-    border: 1.5px solid #3c57e8;
+    border: 1.5px solid dodgerblue;
     transition: 0.3s ease-in-out;
   }
 
   .nav ul li a.active {
     border-radius: 0px 55px 10px 35px;
-    background-color: #3c57e8;
+    background-color: dodgerblue;
     color: #fff;
   }
   .nav ul li a:hover {
     border-radius: 0px 55px 10px 35px;
-    background-color: #3c57e8;
+    background-color: dodgerblue;
     color: #fff;
   }
 
@@ -244,7 +244,7 @@
 
   .logo a i {
     display: inline-flex;
-    color: #3c57e8;
+    color: dodgerblue;
     font-size: 22px;
   }
 
@@ -262,7 +262,7 @@
     background: none;
     font-size: 35px;
     font-weight: 900;
-    color: #3c57e8;
+    color: dodgerblue;
   }
 
   #closebtn {
@@ -270,7 +270,7 @@
     top: -3%;
     right: 13.5%;
     font-size: 75px;
-    color: #3c57e8;
+    color: dodgerblue;
   }
 
   .closebtn {
@@ -304,7 +304,7 @@
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
-    color: #3c57e8;
+    color: dodgerblue;
     display: block;
     transition: 0.5s;
     letter-spacing: 0.5px;
@@ -312,7 +312,7 @@
 
   .sidebar a.active {
     color: #fff;
-    background-color: #3c57e8;
+    background-color: dodgerblue;
   }
 
   .toggleHolder {
