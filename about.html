@@ -10,10 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
-    <script
-      src="https://kit.fontawesome.com/a8791986bc.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/icon.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -43,13 +40,12 @@
               <a href="/index.html">Home</a>
               <a class="active" href="/about.html">About</a>
 
-              <div class="darkmode" id="toggle">
-                <img
-                  id="Dark-icon"
-                  src="/assets/moon.svg"
-                  alt="Dark"
-                  width="42px"
-                />
+              <div
+                class="toggleHolder"
+                onclick="changeTheme()"
+                title="Turn On Dark Mode"
+              >
+                <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
               </div>
             </li>
           </ul>
@@ -86,6 +82,10 @@
       <p>&#169; Copyright 2020-2021 ChiragChrg</p>
     </footer>
 
-    <script src="/js/about.js"></script>
+    <!-- Null IDs -->
+    <div id="theme" style="display: none"></div>
+    <div id="mTheme" style="display: none"></div>
+
+    <script src="/js/app.js"></script>
   </body>
 </html>
