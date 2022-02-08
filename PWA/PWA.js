@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("../ServiceWorker.js")
+      .register("ServiceWorker.js")
       .then((registration) => {
         console.log(`Service Worker Registered Successfully! ${registration}`);
       })
@@ -37,10 +37,17 @@ installButton.addEventListener("click", async () => {
 
 //Check App Installed
 self.addEventListener("appinstalled", () => {
-  buttonHolder.style.display = "none";
   deferredPrompt = null;
   console.log("PWA was installed");
 });
+
+//Hide PWA Button if already installed
+if (
+  window.matchMedia("(display-mode: standalone)").matches ||
+  window.navigator.standalone === true
+) {
+  buttonHolder.style.display = "none";
+}
 
 //Close Button PWA
 function closePWA() {

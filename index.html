@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="/PWA/manifest.json" />
   </head>
 
   <body>
@@ -44,6 +44,7 @@
             <li>
               <a class="active" href="/index.html">Home</a>
               <a href="/about.html">About</a>
+
               <div
                 class="toggleHolder"
                 onclick="changeTheme()"
@@ -51,6 +52,7 @@
               >
                 <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
               </div>
+
               <div class="deskPwa" style="display: none">
                 <div class="pwaButton">
                   <!-- <i class="far fa-plus-circle insIco"></i> -->
@@ -228,6 +230,9 @@
 
       <p>&#169; Copyright 2020-2021 ChiragChrg</p>
     </footer>
+
+    <!-- Null IDs -->
+    <div id="abtTheme"></div>
 
     <script>
       //Switch Dektop/Moblie Buttons
