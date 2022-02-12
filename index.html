@@ -14,13 +14,28 @@
     <link rel="shortcut icon" href="./assets/favicon.png" />
     <link rel="apple-touch-icon" href="./PWA/icons/192.png" />
     <script src="./js/icon.js" crossorigin="anonymous"></script>
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
     <link rel="manifest" href="manifest.json" />
+
+    <style>
+      @font-face {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 400;
+        src: url("assets/fonts/quicksand-v28-latin-regular.eot"); /* IE9 Compat Modes */
+        src: local(""),
+          url("assets/fonts/quicksand-v28-latin-regular.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */ url("assets/fonts/quicksand-v28-latin-regular.woff2")
+            format("woff2"),
+          /* Super Modern Browsers */
+            url("assets/fonts/quicksand-v28-latin-regular.woff") format("woff"),
+          /* Modern Browsers */ url("../fonts/quicksand-v28-latin-regular.ttf")
+            format("truetype"),
+          /* Safari, Android, iOS */
+            url("assets/fonts/quicksand-v28-latin-regular.svg#Quicksand")
+            format("svg"); /* Legacy iOS */
+      }
+    </style>
   </head>
 
   <body>

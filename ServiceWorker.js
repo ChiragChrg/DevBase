@@ -1,5 +1,19 @@
 const CacheName = "V-1.0";
-const CacheList = ["/", "/PWA/offline.html", "/ServiceWorker.js"];
+const CacheList = [
+  "/",
+  "/assets/",
+  "/assets/fonts/",
+  "/css/",
+  "/css/Mobile/",
+  "/js/",
+  "/PWA/",
+  "/PWA/offline.html",
+  "/PWA/icons/",
+  "/index.html",
+  "/about.html",
+  "manifest.json",
+  "/ServiceWorker.js",
+];
 
 //Installing Service Worker
 self.addEventListener("install", (event) => {
