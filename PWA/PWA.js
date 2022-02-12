@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("../PWA/ServiceWorker.js")
+      .register("ServiceWorker.js")
       .then((registration) => {
         console.log(`Service Worker Registered Successfully! ${registration}`);
       })

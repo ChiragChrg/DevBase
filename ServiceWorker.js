@@ -1,10 +1,5 @@
 const CacheName = "V-1.0";
-const CacheList = [
-  "../index.html",
-  "./offline.html",
-  "./manifest.json",
-  "./ServiceWorker.js",
-];
+const CacheList = ["/", "/PWA/offline.html", "/ServiceWorker.js"];
 
 //Installing Service Worker
 self.addEventListener("install", (event) => {
@@ -20,7 +15,10 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return fetch(event.request).catch(() => caches.match("./offline.html"));
+      return (
+        response ||
+        fetch(event.request).catch(() => caches.match("/PWA/offline.html"))
+      );
     })
   );
 });
