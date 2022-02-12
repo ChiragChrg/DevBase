@@ -312,6 +312,12 @@
     justify-content: center;
   }
 
+  .appTitle {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
   .tile a p {
     margin-top: 2%;
   }

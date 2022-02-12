@@ -68,7 +68,7 @@
   .closebtn {
     position: absolute;
     top: 0.3em;
-    right: 1.1em;
+    right: 1em;
     font-size: 75px;
     color: dodgerblue;
     text-decoration: none;
@@ -311,6 +311,12 @@
     color: dodgerblue;
     display: flex;
     justify-content: center;
+  }
+
+  .appTitle {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   .tile a p {

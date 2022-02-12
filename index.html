@@ -15,8 +15,10 @@
     <link rel="apple-touch-icon" href="./PWA/icons/192.png" />
     <script src="./js/icon.js" crossorigin="anonymous"></script>
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="manifest" href="manifest.json" />
   </head>
@@ -108,7 +110,8 @@
           <div class="tile t8">
             <a href="https://sims-arms.000webhostapp.com/">
               <i class="fad fa-user-graduate fa-5x"></i>
-              <h4><br />ARMS</h4>
+              <br />
+              <p class="appTitle">ARMS</p>
               <p>
                 Trouble finding your Study Materials? <br />
                 ARMS helps you to find PDFs for <br />
@@ -120,7 +123,8 @@
           <div class="tile t7">
             <a href="https://filmstack.netlify.app/">
               <i class="fad fa-camera-movie fa-5x"></i>
-              <h4><br />FilmStack</h4>
+              <br />
+              <p class="appTitle">FilmStack</p>
               <p>
                 More info on your Fav Movie? <br />
                 Filmstack shows all the details! <br />
@@ -132,7 +136,8 @@
           <div class="tile t6">
             <a href="https://daysbeyond.netlify.app/">
               <i class="fad fa-calendar-alt fa-5x"></i>
-              <h4><br />Days Beyond</h4>
+              <br />
+              <p class="appTitle">Days Beyond</p>
               <p>
                 Shows Yearly Progress<br />
                 and Daily Events held globally. <br />
@@ -144,7 +149,8 @@
           <div class="tile t5">
             <a href="https://covidtrax.netlify.app/">
               <i class="fad fa-shield-virus fa-5x"></i>
-              <h4><br />CovidTrax</h4>
+              <br />
+              <p class="appTitle">CovidTrax</p>
               <p>
                 Search global COVID-19 <br />
                 statistics for each Country and <br />
@@ -156,7 +162,8 @@
           <div class="tile t4">
             <a href="https://cookeez.netlify.app/">
               <i class="fas fa-cookie-bite fa-5x"></i>
-              <h4><br />Cookeez</h4>
+              <br />
+              <p class="appTitle">Cookeez</p>
               <p>
                 Find your favorite<br />
                 dishes along with the <br />
@@ -168,7 +175,8 @@
           <div class="tile t3">
             <a href="https://klimate.netlify.app/">
               <i class="fad fa-sun fa-5x"></i>
-              <h4><br />CliMate</h4>
+              <br />
+              <p class="appTitle">CliMate</p>
               <p>
                 Get Weather Updates for <br />
                 any location along with <br />
@@ -180,16 +188,17 @@
           <div class="tile t2">
             <a href="https://nuklearbrain.netlify.app/">
               <img
-                src="./assets/nuklearbrain.png"
+                src="./assets/nuklearbrain.svg"
                 alt="nuklearbrain"
                 width="82px"
                 height="82px"
               />
-              <h4><br />Nuklear Brain</h4>
+              <br />
+              <p class="appTitle">Nuklear Brain</p>
               <p>
                 A simple blog with <br />
                 basic interaction elements <br />
-                : )
+                and multiple pages.
               </p>
             </a>
           </div>
@@ -197,11 +206,12 @@
           <div class="tile t1">
             <a href="https://kalci.netlify.app/">
               <i class="fad fa-square-root-alt fa-5x"></i>
-              <h4><br />Kalci</h4>
+              <br />
+              <p class="appTitle">Kalci</p>
               <p>
                 A simple Calculator <br />
                 for basic Calcuations <br />
-                : D
+                and user friendly UI.
               </p>
             </a>
           </div>
@@ -209,7 +219,7 @@
           <!-- <div class="tile t6">
             <a href="#" target="_blank">
               <i class="fab fa-github fa-5x"></i>
-              <h4><br />CliMate</h4>
+              <br /><p class="appTitle">CliMate</p>
               <p>
                 Search global COVID-19 <br />
                 statistics for each Country and <br />
