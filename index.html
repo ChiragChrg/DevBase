@@ -9,11 +9,11 @@
       content="DevBase is a webapp which contains all the website links developed by ChiragChrg."
     />
     <title>Dev Base</title>
-    <link rel="stylesheet" href="./css/light.css" id="theme" />
-    <link rel="stylesheet" href="./css/Mobile/mLight.css" id="mTheme" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Mobile/mobile.css" />
     <link rel="shortcut icon" href="./assets/favicon.png" />
     <link rel="apple-touch-icon" href="./PWA/icons/192.png" />
-    <script src="./js/icon.js" crossorigin="anonymous"></script>
+    <script src="./js/icon.js" title="JavaScript" crossorigin="anonymous"></script>
     <link rel="manifest" href="manifest.json" />
 
     <style>
@@ -64,8 +64,8 @@
           >
           <ul>
             <li>
-              <a class="active" href="/index.html">Home</a>
-              <a href="/about.html">About</a>
+              <a class="active" href="/index.html" title="HTML">Home</a>
+              <a href="/about.html" title="HTML">About</a>
 
               <div
                 class="toggleHolder"
@@ -121,7 +121,36 @@
           <p>MY PROJECTS <br /></p>
         </div>
 
+        <!-- 
+          <i class="fab fa-html5 html" title="HTML"></i>
+          <i class="fab fa-css3 css" title="CSS"></i>
+          <i class="fab fa-js-square js" title="JavaScript"></i>
+          <i class="fab fa-react react" title="React"></i>
+          <i class="fab fa-php php" title="PHP"></i>
+          <i class="fas fa-database sql" title="MySQL"></i>
+         -->
+
         <div class="tiles">
+          <div class="tile t9">
+            <a href="https://pikture.netlify.app/">
+              <i class="fad fa-mountains fa-5x"></i>
+              <br />
+              <p class="appTitle">Piktures</p>
+              <p>
+                Access a wide collection of <br />
+                Vibrant and Colorful images. <br />
+                Search and download any images.
+              </p>
+            </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+              <i class="fab fa-react react" title="React"></i>
+            </div>
+          </div>
+
           <div class="tile t8">
             <a href="https://sims-arms.000webhostapp.com/">
               <i class="fad fa-user-graduate fa-5x"></i>
@@ -133,6 +162,14 @@
                 all subjects in one place. (SIMS - MP)
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+              <i class="fab fa-php php" title="PHP"></i>
+              <i class="fas fa-database sql" title="MySQL"></i>
+            </div>
           </div>
 
           <div class="tile t7">
@@ -146,6 +183,12 @@
                 Search any movie globally.
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+            </div>
           </div>
 
           <div class="tile t6">
@@ -159,6 +202,13 @@
                 Check what's Special Today!
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+              <i class="fas fa-database sql" title="MySQL"></i>
+            </div>
           </div>
 
           <div class="tile t5">
@@ -172,6 +222,12 @@
                 Indian States and Districts
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+            </div>
           </div>
 
           <div class="tile t4">
@@ -185,6 +241,13 @@
                 ingredients for the recipe
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+              <i class="fab fa-react react" title="React"></i>
+            </div>
           </div>
 
           <div class="tile t3">
@@ -198,6 +261,12 @@
                 Geolocation Support.
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+            </div>
           </div>
 
           <div class="tile t2">
@@ -216,6 +285,12 @@
                 and multiple pages.
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html" title="HTML"></i>
+              <i class="fab fa-css3 css" title="CSS"></i>
+              <i class="fab fa-js-square js" title="JavaScript"></i>
+            </div>
           </div>
 
           <div class="tile t1">
@@ -229,6 +304,12 @@
                 and user friendly UI.
               </p>
             </a>
+
+            <div class="lang">
+              <i class="fab fa-html5 html html" title="HTML"></i>
+              <i class="fab fa-css3 css css" title="CSS"></i>
+              <i class="fab fa-js-square js js" title="JavaScript"></i>
+            </div>
           </div>
 
           <!-- <div class="tile t6">
@@ -242,7 +323,7 @@
               </p>
             </a>
           </div> -->
-        </div>
+        </div
       </div>
     </div>
 
@@ -276,7 +357,7 @@
         DesktopInstall.classList.toggle("pwaButtonHolder");
       }
     </script>
-    <script src="/js/app.js"></script>
-    <script src="/PWA/PWA.js"></script>
+    <script src="/js/app.js" title="JavaScript"></script>
+    <script src="/PWA/PWA.js" title="JavaScript"></script>
   </body>
 </html>

@@ -1,5 +1,29 @@
 /* --------------------------- Mobile Responsive --------------------------- */
 @media (max-width: 395px) {
+  :root {
+    --primary: #fff;
+    --secondary: #1e90ff;
+    --font: #000;
+    --alt: #fff;
+    --bg: #ffffff;
+    --active: #00adb5;
+    --white: #fff;
+    --theme: #303030;
+    --footer: #ebebeb;
+  }
+
+  [data-theme="dark"] {
+    --primary: #1d1d1d;
+    --secondary: #1e90ff;
+    --font: #fff;
+    --alt: #000;
+    --bg: #1d1d1d;
+    --active: #fff;
+    --white: #fff;
+    --theme: #ffd700;
+    --footer: #222222;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -12,7 +36,7 @@
   }
 
   body {
-    background-color: #1e90ff;
+    background-color: var(--secondary);
   }
 
   .clipimg {
@@ -34,7 +58,7 @@
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
-    background-color: #1d1d1d;
+    background-color: var(--primary);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
   }
 
@@ -44,7 +68,7 @@
     align-items: center;
     text-decoration: none;
     font-size: 1.5em;
-    color: dodgerblue;
+    color: var(--secondary);
     cursor: pointer;
   }
 
@@ -62,7 +86,7 @@
     background: none;
     font-size: 35px;
     font-weight: 900;
-    color: dodgerblue;
+    color: var(--secondary);
   }
 
   .closebtn {
@@ -70,7 +94,7 @@
     top: 0.3em;
     right: 1em;
     font-size: 75px;
-    color: dodgerblue;
+    color: var(--secondary);
     text-decoration: none;
   }
 
@@ -82,7 +106,7 @@
     top: 0;
     right: 0;
     overflow-x: hidden;
-    background-color: #1d1d1d;
+    background-color: var(--bg);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding-top: 60px;
     transition: 0.5s;
@@ -97,15 +121,15 @@
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
-    color: dodgerblue;
+    color: var(--secondary);
     display: block;
     transition: 0.5s;
     letter-spacing: 0.5px;
   }
 
   .sidebar a.active {
-    color: #fff;
-    background-color: dodgerblue;
+    color: var(--white);
+    background-color: var(--secondary);
   }
 
   .toggleHolder {
@@ -119,7 +143,7 @@
   #toggle {
     font-size: 3em;
     cursor: pointer;
-    color: gold;
+    color: var(--theme);
     position: absolute;
   }
 
@@ -137,15 +161,15 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #fff;
-    color: #000;
+    background: var(--footer);
+    color: var(--font);
   }
 
   .closePwa {
     text-decoration: none;
     font-size: 3em;
     padding: 0 0.2em;
-    color: #000;
+    color: var(--font);
     cursor: pointer;
   }
 
@@ -158,8 +182,8 @@
     display: flex;
     justify-content: space-center;
     align-items: center;
-    color: #fff;
-    background-color: dodgerblue;
+    color: var(--white);
+    background-color: var(--secondary);
     padding: 0.5em 0.5em;
     cursor: pointer;
     border-radius: 5px;
@@ -180,10 +204,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 280%;
-    margin-top: -150%;
-    clip-path: polygon(0% 28%, 100% 32%, 100% 100%, 0% 100%);
-    background-color: #1d1d1d;
+    margin-top: -65em;
+    padding-top: 90em;
+    clip-path: polygon(0% 28%, 100% 31%, 100% 100%, 0% 100%);
+    background-color: var(--bg);
   }
 
   .intro {
@@ -193,7 +217,7 @@
     align-items: center;
     margin: 50% 6% 0 6%;
     padding: 3% 5% 6% 5%;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
     border-radius: 10px;
   }
 
@@ -202,18 +226,17 @@
     font-size: 17px;
     font-weight: 900;
     margin-bottom: 5%;
-    color: #fff;
+    color: var(--font);
   }
 
   .intro a {
     text-decoration: none;
     display: flex;
     font-size: 14px;
-    font-weight: 900;
     padding: 2% 4%;
     border-radius: 0px 55px 10px 35px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--font);
+    color: var(--alt);
     box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
@@ -233,9 +256,9 @@
     letter-spacing: 1.2px;
     text-align: center;
     padding: 2% 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--font);
+    color: var(--font);
     width: 100%;
-    color: #fff;
   }
 
   .tiles {
@@ -253,11 +276,11 @@
     padding: 8% 3%;
     margin: 4% 3%;
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
   }
 
   .tile a {
-    color: #fff;
+    color: var(--font);
     text-decoration: none;
     text-align: center;
     display: flex;
@@ -316,6 +339,12 @@
     justify-content: center;
   }
 
+  .t9 a i {
+    color: #00adb5;
+    display: flex;
+    justify-content: center;
+  }
+
   .appTitle {
     font-size: 1em;
     font-weight: 600;
@@ -326,13 +355,50 @@
     margin-top: 2%;
   }
 
+  /* Code language Stye */
+  .lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .lang i {
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .html {
+    color: #e34c26;
+  }
+
+  .css {
+    color: #264de4;
+  }
+
+  .js {
+    color: #e0c61e;
+  }
+
+  .react {
+    color: #139eb9;
+  }
+
+  .php {
+    color: #474a8a;
+  }
+
+  .sql {
+    color: #474a8a;
+  }
+
   footer {
     /* border: 5px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #222222;
+    background-color: var(--footer);
     padding: 5%;
     margin-top: -0.5%;
   }
@@ -342,11 +408,10 @@
     letter-spacing: 1.2px;
     text-align: center;
     padding: 2% 0;
-    color: #fff;
+    color: var(--font);
   }
 
   .social {
-    /* background-color: rgb(167, 22, 22); */
     padding: 5% 0;
     display: flex;
     justify-content: space-between;
@@ -354,29 +419,22 @@
   }
 
   .social a {
-    /* transition: 0.5s ease-in-out; */
     text-decoration: none;
     border-radius: 50px;
-    /* box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.4); */
   }
-
-  /* .social a:hover {
-      transform: rotate(360deg);
-      box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
-    } */
 
   #f {
     padding: 12px 12px 10px 12px;
-    color: #2054c4;
+    color: #3b5998;
   }
 
   #i {
     padding: 12px 12px 10px 12px;
-    color: #e21157;
+    color: #e1306c;
   }
 
   #t {
     padding: 12px 11px 10px 11px;
-    color: #0bb0f1;
+    color: #00acee;
   }
 }
