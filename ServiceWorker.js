@@ -1,4 +1,4 @@
-const CacheName = "V-1.1";
+const CacheName = "V-1.2";
 const CacheList = [
   "/",
   "assets/Coder.png",
@@ -58,7 +58,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
-          if (CacheName !== cacheName) {
+          if (CacheName.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })

@@ -53,13 +53,16 @@ const changeTheme = () => {
 };
 
 //Check ONline Status
-// window.addEventListener("load", () => {
-//   const CacheName = "V-1.0";
+// self.addEventListener("load", () => {
+//   // let CacheName = "V-1.1";
 //   var online = navigator.onLine;
 //   if (online) {
 //     console.log("Online");
 //   } else {
 //     console.log("Offline");
-//     caches.delete(CacheName);
+
+//     caches.keys().then(function (names) {
+//       for (let name of names) caches.delete(name);
+//     });
 //   }
 // });
