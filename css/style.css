@@ -177,8 +177,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 60%;
-    margin-top: -20%;
+    margin-top: -30em;
+    padding-top: 65em;
     clip-path: polygon(0% 28%, 100% 38%, 100% 100%, 0% 100%);
     background-color: var(--primary);
   }
@@ -188,9 +188,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1% 28%;
-    margin-top: 10%;
-    padding: 2%;
+    margin: 5% 25%;
+    padding: 3em 4em;
     transition: 0.4s ease-in-out;
   }
 
@@ -202,7 +201,8 @@
   .intro p {
     padding: 2%;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin-bottom: 5%;
     color: var(--font);
   }
@@ -212,12 +212,8 @@
     display: flex;
     font-size: 20px;
     color: var(--font);
-    padding: 1% 4%;
+    padding: 2% 4%;
     transition: 0.4s ease-in-out;
-  }
-
-  .intro a i {
-    padding-top: 3%;
   }
 
   .intro a:hover {
@@ -233,7 +229,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin: 3em 0;
     width: 100%;
   }
 
@@ -249,20 +245,71 @@
   }
 
   .tiles {
-    /* border: 1px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
     width: 100%;
-    display: table-column-group;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 2em;
+  }
+
+  @media (max-width: 1196px) {
+    /* If screen size is less than 1196px, then show 2 card in row */
+    .tiles {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: -45em;
+      padding-top: 80em;
+      clip-path: polygon(0% 28%, 100% 35%, 100% 100%, 0% 100%);
+      background-color: var(--primary);
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5% 20%;
+      padding: 3em 4em;
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  @media (max-width: 750px) {
+    /* If screen size is less than 750px, then show 1 card in row */
+    .tiles {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: -65em;
+      padding-top: 120em;
+      clip-path: polygon(0% 28%, 100% 33%, 100% 100%, 0% 100%);
+      background-color: var(--primary);
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5% 10%;
+      padding: 3em 4em;
+      transition: 0.4s ease-in-out;
+    }
   }
 
   .tile {
-    /* border: 1px solid black; */
-    float: left;
-    width: 30%;
-    padding: 2% 3%;
-    margin: 1.6%;
+    padding: 1.5em;
     transition: 0.4s ease-in-out;
   }
 
@@ -408,8 +455,13 @@
   }
 
   .social a {
-    text-decoration: none;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
     transition: 0.5s ease-in-out;
   }
 
@@ -418,18 +470,16 @@
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.3);
   }
 
-  #f {
-    padding: 14px 12px 10px 12px;
+  #f i {
     color: #3b5998;
+    padding: 3px 1.5px 0px 1.5px;
   }
-
-  #i {
-    padding: 14px 12px 10px 12px;
+  #i i {
     color: #e1306c;
+    padding: 3px 4px 0.9px 3.5px;
   }
-
-  #t {
-    padding: 14px 11px 10px 11px;
+  #t i {
     color: #00acee;
+    padding: 3px 1.5px 0px 1.5px;
   }
 }

@@ -12,7 +12,8 @@ window.FontAwesomeKitConfig = {
   token: "a8791986bc",
   v4FontFaceShim: { enabled: true },
   v4shim: { enabled: true },
-  version: "5.15.3",
+  // version: "6.0.0",
+  version: "5.15.4",
 };
 !(function (t) {
   "function" == typeof define && define.amd ? define("kit-loader", t) : t();

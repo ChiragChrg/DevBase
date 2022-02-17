@@ -134,8 +134,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5em 25em;
-    padding: 2em 4em;
+    margin: 5% 25%;
+    padding: 3em 4em;
     transition: 0.4s ease-in-out;
   }
 
@@ -198,8 +198,13 @@
   }
 
   .social a {
-    text-decoration: none;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
     transition: 0.5s ease-in-out;
   }
 
@@ -208,19 +213,17 @@
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.3);
   }
 
-  #f {
-    padding: 10px;
+  #f i {
     color: #3b5998;
+    padding: 3px 1.5px 0px 1.5px;
   }
-
-  #i {
-    padding: 10px 12px;
+  #i i {
     color: #e1306c;
+    padding: 3px 4px 0.9px 3.5px;
   }
-
-  #t {
-    padding: 10px;
+  #t i {
     color: #00acee;
+    padding: 3px 1.5px 0px 1.5px;
   }
 }
 
