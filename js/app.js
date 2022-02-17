@@ -52,52 +52,14 @@ const changeTheme = () => {
   }
 };
 
-// // Dark mode Toggle
-// const ToggleHolder = document.querySelector(".toggleHolder");
-// const Toggle = document.querySelector("#toggle");
-// const Theme = document.querySelector("#theme");
-// var MobileTheme = document.querySelector("#mTheme");
-// const AboutThm = document.querySelector("#abtTheme");
-// const CurrentTheme = localStorage.getItem("Theme");
-// var SetTheme;
-
-// if (CurrentTheme == "dark") {
-//   Theme.href = "/css/dark.css";
-//   MobileTheme.href = "/css/Mobile/mDark.css";
-//   AboutThm.href = "/css/aboutD.css";
-//   Toggle.className = "fad fa-lightbulb-on fa-2x";
-//   ToggleHolder.title = "Turn On Light Mode";
-//   // console.log("dark-ganja");
-// } else {
-//   Theme.href = "/css/light.css";
-//   MobileTheme.href = "/css/Mobile/mLight.css";
-//   AboutThm.href = "/css/aboutL.css";
-//   Toggle.className = "fad fa-lightbulb fa-2x";
-//   ToggleHolder.title = "Turn On Dark Mode";
-//   // console.log("light-ganja");
-// }
-
-// function changeTheme() {
-//   if (
-//     Theme.getAttribute("href") == "/css/light.css" ||
-//     AboutThm.getAttribute("href") == "/css/aboutL.css"
-//   ) {
-//     Theme.href = "/css/dark.css";
-//     MobileTheme.href = "/css/Mobile/mDark.css";
-//     AboutThm.href = "/css/aboutD.css";
-//     SetTheme = "dark";
-//     Toggle.className = "on fad fa-lightbulb-on fa-2x";
-//     ToggleHolder.title = "Turn On Light Mode";
-//     // closeNav();
+//Check ONline Status
+// window.addEventListener("load", () => {
+//   const CacheName = "V-1.0";
+//   var online = navigator.onLine;
+//   if (online) {
+//     console.log("Online");
 //   } else {
-//     Theme.href = "/css/light.css";
-//     MobileTheme.href = "/css/Mobile/mLight.css";
-//     AboutThm.href = "/css/aboutL.css";
-//     SetTheme = "light";
-//     Toggle.className = "off fad fa-lightbulb fa-2x";
-//     ToggleHolder.title = "Turn On Dark Mode";
-//     // closeNav();
+//     console.log("Offline");
+//     caches.delete(CacheName);
 //   }
-
-//   localStorage.setItem("Theme", SetTheme);
-// }
+// });
