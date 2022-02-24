@@ -2,7 +2,7 @@
 @media (max-width: 395px) {
   :root {
     --primary: #fff;
-    --secondary: #1e90ff;
+    --secondary: #0057ad;
     --font: #000;
     --alt: #fff;
     --bg: #ffffff;
@@ -13,8 +13,8 @@
   }
 
   [data-theme="dark"] {
-    --primary: #1d1d1d;
-    --secondary: #1e90ff;
+    --primary: #1c1c1c;
+    --secondary: #5cadff;
     --font: #fff;
     --alt: #000;
     --bg: #1d1d1d;
