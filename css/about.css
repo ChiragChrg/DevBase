@@ -281,6 +281,7 @@
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5% 0;
     top: 0;
     position: sticky;
@@ -301,12 +302,15 @@
     font-size: 22px;
   }
 
+  .logo a h1 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -2px;
+  }
+
   .navham {
-    display: flex;
     position: absolute;
-    right: 7%;
-    top: -1%;
-    height: 100%;
+    right: 1.5em;
   }
 
   .openbtn {
