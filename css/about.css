@@ -65,7 +65,7 @@
     cursor: pointer;
   }
 
-  .logo a p {
+  .logo a h1 {
     font-size: 1em;
     font-weight: bold;
     margin-top: -2px;
@@ -170,10 +170,6 @@
     color: var(--font);
     padding: 2% 4%;
     transition: 0.4s ease-in-out;
-  }
-
-  .intro a h1 {
-    font-size: 1.8em;
   }
 
   .intro a:hover {
