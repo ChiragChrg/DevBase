@@ -2,7 +2,8 @@
 @media (min-width: 396px) {
   :root {
     --primary: #fff;
-    --secondary: #1e90ff;
+    /* --secondary: #1e90ff; */
+    --secondary: #0057ad;
     --font: #000;
     --alt: #fff;
     --bg: #ffffff;
@@ -13,8 +14,9 @@
   }
 
   [data-theme="dark"] {
-    --primary: #1d1d1d;
-    --secondary: #1e90ff;
+    /* --primary: #1d1d1d; */
+    --primary: #1c1c1c;
+    --secondary: #5cadff;
     --font: #fff;
     --alt: #000;
     --bg: #1d1d1d;
@@ -61,6 +63,12 @@
   .logo a {
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .logo a p {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -2px;
   }
 
   .logo a i {
@@ -156,10 +164,16 @@
   .intro a {
     text-decoration: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     color: var(--font);
     padding: 2% 4%;
     transition: 0.4s ease-in-out;
+  }
+
+  .intro a h1 {
+    font-size: 1.8em;
   }
 
   .intro a:hover {
