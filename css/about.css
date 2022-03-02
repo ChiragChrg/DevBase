@@ -319,7 +319,7 @@
     background: none;
     font-size: 35px;
     font-weight: 900;
-    color: dodgerblue;
+    color: var(--secondary);
   }
 
   .closebtn {
@@ -327,7 +327,7 @@
     top: 0.3em;
     right: 1em;
     font-size: 75px;
-    color: dodgerblue;
+    color: var(--secondary);
     text-decoration: none;
   }
 
@@ -354,7 +354,7 @@
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
-    color: dodgerblue;
+    color: var(--secondary);
     display: block;
     transition: 0.5s;
     letter-spacing: 0.5px;
@@ -362,7 +362,7 @@
 
   .sidebar a.active {
     color: #fff;
-    background-color: dodgerblue;
+    background-color: var(--secondary);
   }
 
   .toggleHolder {
