@@ -45,7 +45,7 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#000000",
   "description": "DevBase is a webapp which contains all the website links developed by ChiragChrg."
