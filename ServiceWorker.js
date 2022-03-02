@@ -1,4 +1,4 @@
-const CacheName = "V-1.5";
+const CacheName = "V-1.6";
 const CacheList = [
   "/",
   "assets/Coder.png",
