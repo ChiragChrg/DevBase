@@ -300,7 +300,7 @@
 
   .logo a i {
     display: inline-flex;
-    color: dodgerblue;
+    color: var(--secondary);
     font-size: 22px;
   }
 
@@ -344,7 +344,7 @@
     background-color: var(--primary);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .sidebar ul li {
     padding-top: 80px;

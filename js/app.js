@@ -9,6 +9,49 @@ function closeNav() {
   document.querySelector("body").style.overflow = "auto";
 }
 
+//Mobile navigation swipe right to left
+document.body.addEventListener("touchstart", startTouch, { passive: false });
+document.body.addEventListener("touchmove", moveTouch, { passive: false });
+
+var initialX = null;
+var initialY = null;
+
+function startTouch(e) {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+}
+
+function moveTouch(e) {
+  if (initialX === null) {
+    return;
+  }
+
+  if (initialY === null) {
+    return;
+  }
+
+  var currentX = e.touches[0].clientX;
+  var currentY = e.touches[0].clientY;
+
+  var diffX = initialX - currentX;
+  var diffY = initialY - currentY;
+
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    if (diffX > 0) {
+      // Swiped to Right
+      openNav();
+    } else {
+      // Swiped to Right
+      closeNav();
+    }
+  }
+
+  initialX = null;
+  initialY = null;
+
+  e.preventDefault();
+}
+
 //Check previous Theme on load
 window.onload = () => {
   let ToggleHolder = document.querySelector(".toggleHolder");
@@ -51,18 +94,3 @@ const changeTheme = () => {
     localStorage.setItem("myTheme", "light");
   }
 };
-
-//Check ONline Status
-// self.addEventListener("load", () => {
-//   // let CacheName = "V-1.1";
-//   var online = navigator.onLine;
-//   if (online) {
-//     console.log("Online");
-//   } else {
-//     console.log("Offline");
-
-//     caches.keys().then(function (names) {
-//       for (let name of names) caches.delete(name);
-//     });
-//   }
-// });
