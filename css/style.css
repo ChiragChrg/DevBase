@@ -10,6 +10,7 @@
     --white: #fff;
     --theme: #303030;
     --footer: #ebebeb;
+    --alt-shadow: 1px 2px 20px 0px rgba(173, 171, 171, 0.4);
   }
 
   [data-theme="dark"] {
@@ -22,6 +23,7 @@
     --white: #fff;
     --theme: #ffd700;
     --footer: #222222;
+    --alt-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 
   * {
@@ -257,7 +259,7 @@
   .tiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    gap: 1.5em;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -318,86 +320,29 @@
     }
   }
 
-  .tile {
-    padding: 1.5em;
-    transition: 0.4s ease-in-out;
-  }
-
-  .tile:hover {
-    border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-  }
-
-  .tile a {
-    color: var(--font);
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .t1 a i {
-    color: rgb(20, 73, 134);
-    display: flex;
-    justify-content: center;
-  }
-
-  .t2 a {
-    /* color: rgb(143, 55, 14); */
+  .tiles .tile{
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: var(--font);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.4s ease-in-out;
   }
 
-  .t3 a i {
-    color: rgb(255, 155, 6);
-    display: flex;
-    justify-content: center;
-  }
-
-  .t4 a i {
-    color: rgb(143, 55, 14);
-    display: flex;
-    justify-content: center;
-  }
-
-  .t5 a i {
-    color: dodgerblue;
-    display: flex;
-    justify-content: center;
-  }
-
-  .t6 a i {
-    color: #6600ff;
-    display: flex;
-    justify-content: center;
-  }
-
-  .t7 a i {
-    color: #2b4eec;
-    display: flex;
-    justify-content: center;
-  }
-
-  .t8 a i {
-    color: dodgerblue;
-    display: flex;
-    justify-content: center;
-  }
-
-  .t9 a i {
-    color: #00adb5;
-    display: flex;
-    justify-content: center;
+  .tiles .tile:hover{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: var(--alt-shadow);
   }
 
   .appTitle {
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.5px;
-  }
-
-  .tile a p {
-    margin-top: 2%;
+    margin: 0.5em 0;
   }
 
   /* Code language Stye */
@@ -435,6 +380,10 @@
 
   .sql {
     color: #474a8a;
+  }
+  
+  .node{
+    color: #6cc24a;
   }
 
   footer {
