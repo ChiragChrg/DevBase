@@ -203,6 +203,10 @@
     z-index: 1;
   }
 
+  .welcome .imgHolder img{
+    aspect-ratio: 1.54 !important;
+  }
+
   .welcome .imgHolder .ripple{
     position: absolute;
     width: 450px;

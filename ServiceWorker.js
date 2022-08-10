@@ -1,8 +1,8 @@
 const CacheName = "V-2.5";
 const CacheList = [
   "/",
-  "assets/Coder.png",
-  "assets/favicon.png",
+  "assets/Coder.webp",
+  "assets/favicon.webp",
   "assets/nuklearbrain.svg",
   "css/about.css",
   "css/style.css",
