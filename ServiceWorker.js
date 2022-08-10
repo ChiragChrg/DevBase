@@ -4,11 +4,6 @@ const CacheList = [
   "assets/Coder.png",
   "assets/favicon.png",
   "assets/nuklearbrain.svg",
-  "assets/fonts/quicksand-v28-latin-regular.eot",
-  "assets/fonts/quicksand-v28-latin-regular.svg",
-  "assets/fonts/quicksand-v28-latin-regular.ttf",
-  "assets/fonts/quicksand-v28-latin-regular.woff",
-  "assets/fonts/quicksand-v28-latin-regular.woff2",
   "css/about.css",
   "css/style.css",
   "/css/Mobile/mobile.css",
@@ -29,6 +24,12 @@ const CacheList = [
   "manifest.json",
   "ServiceWorker.js",
 ];
+
+// "assets/fonts/quicksand-v28-latin-regular.eot",
+// "assets/fonts/quicksand-v28-latin-regular.svg",
+// "assets/fonts/quicksand-v28-latin-regular.ttf",
+// "assets/fonts/quicksand-v28-latin-regular.woff",
+// "assets/fonts/quicksand-v28-latin-regular.woff2",
 
 //Installing Service Worker
 self.addEventListener("install", (event) => {

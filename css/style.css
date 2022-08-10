@@ -230,9 +230,10 @@
     }
   }
 
-  .welcome h1{
+  .welcome h2{
     margin: 3em 0;
     color: var(--font);
+    font-size: 2em;
   }
 
   .intro {
@@ -294,7 +295,7 @@
     width: 100%;
   }
 
-  .app-title p {
+  .app-title h3 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -325,9 +326,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      margin-top: -45em;
-      padding-top: 80em;
-      clip-path: polygon(0% 28%, 100% 35%, 100% 100%, 0% 100%);
+      /* clip-path: polygon(0% 28%, 100% 35%, 100% 100%, 0% 100%); */
       background-color: var(--primary);
     }
 
@@ -352,9 +351,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      margin-top: -65em;
-      padding-top: 120em;
-      clip-path: polygon(0% 28%, 100% 33%, 100% 100%, 0% 100%);
+      /* clip-path: polygon(0% 28%, 100% 33%, 100% 100%, 0% 100%); */
       background-color: var(--primary);
     }
 
