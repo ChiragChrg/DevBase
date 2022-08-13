@@ -232,7 +232,8 @@
   }
 
   .welcome .imgHolder img{
-    width: 160px !important;
+    width: 162px !important;
+    height: 105px !important;
   }
 
   .welcome .imgHolder .ripple{
