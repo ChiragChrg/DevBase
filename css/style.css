@@ -50,12 +50,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    top: 0;
+    padding-top: 1.5em;
+    background-color: var(--primary);
+    /* top: 0;
     position: sticky;
     position: -webkit-sticky;
     z-index: 2;
-    background-color: var(--primary);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
   }
 
   .logo a {
@@ -151,14 +152,14 @@
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 50px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   .pwaButton:hover {
     border: 1px solid var(--secondary);
     background-color: var(--primary);
     color: var(--secondary);
-    box-shadow: 0 0 5px 0 var(--secondary);
+    /* box-shadow: 0 0 5px 0 var(--secondary); */
   }
 
   .insIco {
@@ -252,7 +253,7 @@
   }
 
   .intro:hover {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: var(--alt-shadow);
     border-radius: 15px;
   }
 
@@ -286,7 +287,7 @@
     border-radius: 0px 55px 10px 35px;
     background-color: var(--font);
     color: var(--alt);
-    box-shadow: 3px 6px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--alt-shadow);
     cursor: pointer;
   }
 

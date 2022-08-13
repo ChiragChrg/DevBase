@@ -11,6 +11,7 @@
     --white: #fff;
     --theme: #303030;
     --footer: #ebebeb;
+    --alt-shadow: 1px 2px 20px 0px rgba(173, 171, 171, 0.4);
   }
 
   [data-theme="dark"] {
@@ -24,6 +25,7 @@
     --white: #fff;
     --theme: #ffd700;
     --footer: #222222;
+    --alt-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 
   * {
@@ -40,9 +42,10 @@
 
   body {
     background-color: var(--primary);
-    overflow: scroll;
+    overflow: hidden;
     scrollbar-width: none;
-    -ms-overflow-style: none;
+    height: 100vh;
+    position: relative;
   }
 
   body::-webkit-scrollbar {
@@ -53,12 +56,12 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 4%;
-    top: 0;
+    background-color: var(--primary);
+    /* top: 0;
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
-    background-color: var(--primary);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); */
   }
 
   .logo a {
@@ -139,17 +142,16 @@
   }
 
   .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 25%;
-    padding: 3em 4em;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    padding: 1em 2em;
     transition: 0.4s ease-in-out;
+    margin: 2em auto;
   }
 
   .intro:hover {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: var(--alt-shadow);
     border-radius: 15px;
   }
 
@@ -158,26 +160,32 @@
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 5%;
     color: var(--font);
   }
 
-  .intro a {
+  .intro .intro-Links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro .intro-Links a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     color: var(--font);
-    padding: 2% 4%;
+    padding: 0.5em 1em;
+    margin: 1em;
     transition: 0.4s ease-in-out;
   }
 
-  .intro a:hover {
+  .intro .intro-Links a:hover {
     border-radius: 0px 55px 10px 35px;
     background-color: var(--font);
     color: var(--alt);
-    box-shadow: 3px 6px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--alt-shadow);
     cursor: pointer;
   }
 
@@ -190,6 +198,9 @@
     background-color: var(--footer);
     padding: 2%;
     margin-top: -0.5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
   footer p {
@@ -250,6 +261,7 @@
     --white: #fff;
     --theme: #303030;
     --footer: #ebebeb;
+    --alt-shadow: 1px 2px 20px 0px rgba(173, 171, 171, 0.4);
   }
 
   [data-theme="dark"] {
@@ -262,6 +274,7 @@
     --white: #fff;
     --theme: #ffd700;
     --footer: #222222;
+    --alt-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 
   * {
@@ -278,6 +291,9 @@
 
   body {
     background-color: var(--primary);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
   }
 
   header {
@@ -285,12 +301,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 5% 0;
-    top: 0;
+    background-color: var(--primary);
+    /* top: 0;
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
-    background-color: var(--primary);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55); */
   }
 
   .logo a {
@@ -383,37 +399,48 @@
   }
 
   .intro {
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12em 2em;
-    padding: 2em 1em;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    margin: 12em 1.5em;
+    padding: 1em;
+    box-shadow: var(--alt-shadow);
     border-radius: 10px;
   }
 
   .intro p {
     padding: 2%;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 900;
     margin-bottom: 5%;
     color: var(--font);
   }
 
-  .intro a {
-    /* transition: 0.4s ease-in-out; */
-    /* color: #000; */
-    text-decoration: none;
+  .intro .intro-Links{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .intro .intro-Links a {
+    text-decoration: none;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
-    padding: 2% 4%;
-    border-radius: 0px 55px 10px 35px;
+    padding: 0.5em 1em;
+    border-radius: 50px;
     background-color: var(--font);
     color: var(--alt);
-    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+  }
+
+  .intro .intro-Links a img{
+    width: 30px;
+    height: 30px;
   }
 
   footer {
@@ -425,6 +452,9 @@
     background-color: var(--footer);
     padding: 5%;
     margin-top: -0.5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
   footer p {
