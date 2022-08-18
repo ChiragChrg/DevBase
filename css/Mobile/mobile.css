@@ -102,7 +102,7 @@
     height: 100%;
     width: 0%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     overflow-x: hidden;
@@ -231,6 +231,7 @@
     height: 200px;
     border-radius: 100%;
     z-index: 1;
+    color: var(--primary);
   }
 
   .welcome .imgHolder img{
