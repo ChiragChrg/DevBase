@@ -205,9 +205,13 @@
     color: var(--primary);
   }
 
-  .welcome .imgHolder img{
-    aspect-ratio: 1.54 !important;
+  .welcome .imgHolder .img{
+    font-size: 7em;
   }
+
+  /* .welcome .imgHolder img{
+    aspect-ratio: 1.54 !important;
+  } */
 
   .welcome .imgHolder .ripple{
     position: absolute;

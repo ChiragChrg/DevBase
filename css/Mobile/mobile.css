@@ -234,10 +234,14 @@
     color: var(--primary);
   }
 
-  .welcome .imgHolder img{
+  .welcome .imgHolder .img{
+    font-size: 5.5em;
+  }
+
+  /* .welcome .imgHolder img{
     width: 162px !important;
     height: 105px !important;
-  }
+  } */
 
   .welcome .imgHolder .ripple{
     position: absolute;
