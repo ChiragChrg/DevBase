@@ -1,4 +1,4 @@
-const CacheName = "V-2.8";
+const CacheName = "V-2.9";
 const CacheList = [
   "/",
   "css/about.css",
