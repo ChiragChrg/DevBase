@@ -1,19 +1,19 @@
-const CacheName = "V-2.8";
+const CacheName = "V-3.0";
 const CacheList = [
   "/",
   "css/about.css",
   "css/style.css",
   "/css/Mobile/mobile.css",
   "/js/app.js",
-  "/PWA/offline.html",
-  "/PWA/PWA.js",
   "/js/icon.js",
   "index.html",
   "about.html",
   "manifest.json",
-  "ServiceWorker.js",
 ];
 
+// "/PWA/offline.html",
+// "/PWA/PWA.js",
+// "ServiceWorker.js",
 // "assets/Coder.webp",
 // "assets/favicon.webp",
 // "assets/nuklearbrain.svg",
@@ -55,15 +55,5 @@ self.addEventListener("fetch", (event) => {
 
 //Activating Service Worker
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (CacheName.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
+ // Prev Cache deleted on PWA.js  
 });
