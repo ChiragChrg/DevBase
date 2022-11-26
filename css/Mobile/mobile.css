@@ -1,5 +1,5 @@
 /* --------------------------- Mobile Responsive --------------------------- */
-@media (max-width: 395px) {
+@media (max-width: 701px) {
   :root {
     --primary: #fff;
     --secondary: #0057ad;

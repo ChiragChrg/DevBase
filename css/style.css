@@ -1,5 +1,5 @@
 /* --------------------------- Desktop Responsive --------------------------- */
-@media (min-width: 396px) {
+@media (min-width: 700px) {
   :root {
     --primary: #fff;
     --secondary: #0057ad;
@@ -52,8 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
-    padding-top: 1.5em;
+    padding: 1em;
     background-color: var(--primary);
     /* top: 0;
     position: sticky;
@@ -336,7 +335,7 @@
     padding: 2em;
   }
 
-  @media (max-width: 1196px) {
+  @media (max-width: 1110px) {
     /* If screen size is less than 1196px, then show 2 card in row */
     .tiles {
       grid-template-columns: repeat(2, 1fr);
@@ -361,7 +360,7 @@
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 701px) {
     /* If screen size is less than 750px, then show 1 card in row */
     .tiles {
       grid-template-columns: repeat(1, 1fr);

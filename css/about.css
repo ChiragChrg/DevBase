@@ -1,5 +1,5 @@
 /* --------------------------  Desktop Responsive Design  -------------------------- */
-@media (min-width: 396px) {
+@media (min-width: 700px) {
   :root {
     --primary: #fff;
     /* --secondary: #1e90ff; */
@@ -250,7 +250,7 @@
 }
 
 /* --------------------------  Mobile Responsive Design  -------------------------- */
-@media (max-width: 395px) {
+@media (max-width: 701px) {
   :root {
     --primary: #fff;
     --secondary: #0057ad;

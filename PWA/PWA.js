@@ -1,15 +1,15 @@
-// if ("serviceWorker" in navigator) {
-//   window.addEventListener("load", () => {
-//     navigator.serviceWorker
-//       .register("ServiceWorker.js")
-//       .then(console.log(`Service Worker Registered Successfully! `))
-//       .catch((err) => {
-//         console.log(`Error registring ${err}`);
-//       });
-//   });
-// } else {
-//   console.log(`Service Worker is not supported in this browser.`);
-// }
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("ServiceWorker.js")
+      .then(console.log(`Service Worker Registered Successfully! `))
+      .catch((err) => {
+        console.log(`Error registring ${err}`);
+      });
+  });
+} else {
+  console.log(`Service Worker is not supported in this browser.`);
+}
 
 // window.isUpdateAvailable = new Promise(function(resolve, reject) {
 //   // lazy way of disabling service workers while developing
