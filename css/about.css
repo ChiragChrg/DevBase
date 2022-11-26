@@ -1,5 +1,5 @@
 /* --------------------------  Desktop Responsive Design  -------------------------- */
-@media (min-width: 700px) {
+@media (min-width: 550px) {
   :root {
     --primary: #fff;
     /* --secondary: #1e90ff; */
@@ -250,7 +250,7 @@
 }
 
 /* --------------------------  Mobile Responsive Design  -------------------------- */
-@media (max-width: 701px) {
+@media (max-width: 549px) {
   :root {
     --primary: #fff;
     --secondary: #0057ad;
@@ -404,7 +404,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12em 1.5em;
+    margin: 5em 1.5em;
     padding: 1em;
     box-shadow: var(--alt-shadow);
     border-radius: 10px;
