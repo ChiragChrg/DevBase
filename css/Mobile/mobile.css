@@ -3,6 +3,8 @@
   :root {
     --primary: #fff;
     --secondary: #0057ad;
+    --icon: brightness(0) saturate(100%) invert(15%) sepia(80%) saturate(3397%) hue-rotate(199deg) brightness(105%) contrast(100%);
+    --icon-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(243deg) brightness(103%) contrast(101%);
     --font: #000;
     --alt: #fff;
     --bg: #ffffff;
@@ -16,6 +18,7 @@
   [data-theme="dark"] {
     --primary: #1c1c1c;
     --secondary: #5cadff;
+    --icon: brightness(0) saturate(100%) invert(60%) sepia(86%) saturate(1289%) hue-rotate(184deg) brightness(98%) contrast(107%);
     --font: #fff;
     --alt: #000;
     --bg: #1d1d1d;
@@ -46,8 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
-    padding-top: 1.5em;
+    padding: 1em;
     background-color: var(--primary);
     /* top: 0;
     position: sticky;
@@ -64,6 +66,10 @@
     font-size: 1.5em;
     color: var(--secondary);
     cursor: pointer;
+  }
+
+  .logo a img{
+    filter: var(--icon);
   }
 
   .logo a h1 {
@@ -234,8 +240,11 @@
     color: var(--primary);
   }
 
-  .welcome .imgHolder .img{
-    font-size: 5.5em;
+  .welcome .imgHolder img{
+    filter: var(--icon-white);
+    width: 100%;
+    height: 100%;
+    padding: 2em;
   }
 
   /* .welcome .imgHolder img{
