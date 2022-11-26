@@ -11,58 +11,58 @@
 //   console.log(`Service Worker is not supported in this browser.`);
 // }
 
-window.isUpdateAvailable = new Promise(function(resolve, reject) {
-  // lazy way of disabling service workers while developing
-  if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-    // register service worker file
-    navigator.serviceWorker.register('ServiceWorker.js')
-      .then(reg => {
-        reg.onupdatefound = () => {
-          const installingWorker = reg.installing;
-          installingWorker.onstatechange = () => {
-            switch (installingWorker.state) {
-              case 'installed':
-                if (navigator.serviceWorker.controller) {
-                  // new update available
-                  resolve(true);
-                } else {
-                  // no update available
-                  resolve(false);
-                }
-                break;
-            }
-          };
-        };
-      })
-      .catch(err => console.error('[SW ERROR]', err));
+// window.isUpdateAvailable = new Promise(function(resolve, reject) {
+//   // lazy way of disabling service workers while developing
+//   if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
+//     // register service worker file
+//     navigator.serviceWorker.register('ServiceWorker.js')
+//       .then(reg => {
+//         reg.onupdatefound = () => {
+//           const installingWorker = reg.installing;
+//           installingWorker.onstatechange = () => {
+//             switch (installingWorker.state) {
+//               case 'installed':
+//                 if (navigator.serviceWorker.controller) {
+//                   // new update available
+//                   resolve(true);
+//                 } else {
+//                   // no update available
+//                   resolve(false);
+//                 }
+//                 break;
+//             }
+//           };
+//         };
+//       })
+//       .catch(err => console.error('[SW ERROR]', err));
 
-    //Delete Previous Cache
-    caches.keys().then(function(cacheNames) {
-      let currentCache = cacheNames[cacheNames.length - 1];
-      // console.log(cacheNames.length);  
-      // console.log("Current : ",currentCache);
+//     //Delete Previous Cache
+//     caches.keys().then(function(cacheNames) {
+//       let currentCache = cacheNames[cacheNames.length - 1];
+//       // console.log(cacheNames.length);  
+//       // console.log("Current : ",currentCache);
 
-      cacheNames.filter(itm => {
-        if (itm !== currentCache) {
-            // console.log("Deleteing : ",itm);
-          caches.delete(itm);
-        }
-      })
-    });
-  }
-});
+//       cacheNames.filter(itm => {
+//         if (itm !== currentCache) {
+//             // console.log("Deleteing : ",itm);
+//           caches.delete(itm);
+//         }
+//       })
+//     });
+//   }
+// });
 
-window["isUpdateAvailable"]
-  .then((isUpdateAvailable) => {
-    if (isUpdateAvailable) {
-      // console.log("Update Available");
-      window.location.reload();
-    }
-  })
-  .catch((err) => {
-    console.error(err);
-  }
-);
+// window["isUpdateAvailable"]
+//   .then((isUpdateAvailable) => {
+//     if (isUpdateAvailable) {
+//       // console.log("Update Available");
+//       window.location.reload();
+//     }
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   }
+// );
 
 const buttonHolder = document.querySelector(".pwaButtonHolder");
 //BeforeInstallPromptEvent

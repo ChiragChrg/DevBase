@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="DevBase is a webapp which contains all the website links developed by ChiragChrg."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="chiragchrg, chirag, ChiragChrg1, chrg, DevBase, Dev Base, Srinivas Exam Manager, Piktures, FilmStack, ARMS, Cookeez, Days Beyond, CovidTrax, CliMate, Nuklear Brain, Kalci" />
-    <title>Dev Base - ChiragChrg | Portfolio</title>
 
-    <link rel="stylesheet preload" as="style" href="./css/style.css" />
-    <link rel="stylesheet preload" as="style" href="./css/Mobile/mobile.css" />
-    <link rel="shortcut icon" href="./assets/favicon.webp" />
-    <link rel="apple-touch-icon" href="./PWA/icons/192.png" />
-    <script defer async src="./js/icon.js" title="JavaScript" crossorigin="anonymous"></script>
-    <link rel="manifest" href="manifest.json" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="DevBase is a webapp which contains all the website links developed by ChiragChrg." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords"
+    content="chiragchrg, chirag, ChiragChrg1, chrg, DevBase, Dev Base, Srinivas Exam Manager, Piktures, FilmStack, ARMS, Cookeez, Days Beyond, CovidTrax, CliMate, Nuklear Brain, Kalci" />
+  <title>Dev Base - ChiragChrg | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+  <link rel="stylesheet preload" as="style" href="./css/style.css" />
+  <link rel="stylesheet preload" as="style" href="./css/Mobile/mobile.css" />
+  <link rel="shortcut icon" href="./assets/DevbaseLogo.svg" />
+  <link rel="apple-touch-icon" href="./PWA/icons/192.png" />
+  <script defer async src="./js/icon.js" title="JavaScript" crossorigin="anonymous"></script>
+  <link rel="manifest" href="manifest.json" />
 
-    <!-- <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+
+  <!-- <style>
       @font-face {
         font-family: "Quicksand";
         font-style: normal;
@@ -43,111 +43,104 @@
             format("svg"); /* Legacy iOS */
       }
     </style> -->
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <a href="https://devbase.netlify.app/" title="DevBase">
-          <i class="fas fa-code"></i>
-          <h1>&nbsp;Dev Base</h1>
-        </a>
+<body>
+  <header>
+    <div class="logo">
+      <a href="https://devbase.netlify.app/" title="DevBase">
+        <img src="./assets/DevbaseLogo.svg" alt="BackgroundCoder" width="50" height="50" style="fill:#000" />
+        <!-- <i class="fas fa-code"></i> -->
+        <h1>&nbsp;Dev Base</h1>
+      </a>
+    </div>
+
+    <div class="navham">
+      <div class="openbtn" onclick="openNav()">
+        <i class="fad fa-bars"></i>
       </div>
+    </div>
 
-      <div class="navham">
-        <div class="openbtn" onclick="openNav()">
-          <i class="fad fa-bars"></i>
-        </div>
-      </div>
-
-      <div class="nav">
-        <div id="sidepanel" class="sidebar">
-          <button id="closebtn" class="closebtn" onclick="closeNav()">
-            &times;
-          </button>
-          
-          <ul>
-            <li>
-              <a class="active" href="/index.html" title="Home">Home</a>
-              <a href="/about.html" title="About">About</a>
-
-              <div
-                class="toggleHolder"
-                onclick="changeTheme()"
-                title="Turn On Dark Mode"
-              >
-                <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
-              </div>
-
-              <div class="deskPwa" style="display: none">
-                <div class="pwaButton">
-                  <!-- <i class="far fa-plus-circle insIco"></i> -->
-                  <i class="far fa-sign-in insIco"></i>
-                  <p class="insTxt">Install</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- PWA Install Button -->
-      <div class="mobPwa" style="display: none">
-        <button class="closePwa" onclick="closePWA()">
+    <div class="nav">
+      <div id="sidepanel" class="sidebar">
+        <button id="closebtn" class="closebtn" onclick="closeNav()">
           &times;
         </button>
-        <p class="txtPwa">
-          Get our Free app. It won't take space on your Phone.
-        </p>
-        <div class="pwaButton">
-          <i class="far fa-sign-in insIco"></i>
-          <p class="insTxt">Install</p>
-        </div>
+
+        <ul>
+          <li>
+            <a class="active" href="/index.html" title="Home">Home</a>
+            <a href="/about.html" title="About">About</a>
+
+            <div class="toggleHolder" onclick="changeTheme()" title="Turn On Dark Mode">
+              <i id="toggle" class="fad fa-lightbulb fa-2x"></i>
+            </div>
+
+            <div class="deskPwa" style="display: none">
+              <div class="pwaButton">
+                <!-- <i class="far fa-plus-circle insIco"></i> -->
+                <i class="far fa-sign-in insIco"></i>
+                <p class="insTxt">Install</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <!-- PWA Install Button -->
-    </header>
+    </div>
+    <!-- PWA Install Button -->
+    <div class="mobPwa" style="display: none">
+      <button class="closePwa" onclick="closePWA()">
+        &times;
+      </button>
+      <p class="txtPwa">
+        Get our Free app. It won't take space on your Phone.
+      </p>
+      <div class="pwaButton">
+        <i class="far fa-sign-in insIco"></i>
+        <p class="insTxt">Install</p>
+      </div>
+    </div>
+    <!-- PWA Install Button -->
+  </header>
 
-    <div class="container">
-      <div class="welcome">
-        <div class="imgHolder">
-          <!-- <img src="./assets/Coder.webp" 
-          alt="BackgroundCoder" 
-          width="201"
-          height="130"
-          /> -->
-          <i class="fas fa-code img"></i>
-          <span class="ripple"></span>
-          <span class="ripple"></span>
-        </div>
-
-        <h2>Welcome to Dev Base</h2>
+  <div class="container">
+    <div class="welcome">
+      <div class="imgHolder">
+        <img src="./assets/DevbaseLogo.svg" alt="BackgroundCoder" />
+        <!-- <i class="fas fa-code img"></i> -->
+        <span class="ripple"></span>
+        <span class="ripple"></span>
       </div>
 
-      <div class="intro">
-        <p>
-          Hello,<br />
-          &emsp; I'm Chirag, a Fullstack developer. <br />
-          &emsp; I create exciting Webapps. <br />
-          &emsp; All of my projects are Open-Source, <br>
-          &emsp; So Enjoy! <br />
-        </p>
-        <div class="intro-Links">
-          <a href="https://www.google.com/search?q=%22chiragchrg%22" target="_blank" title="Google">
-            <img src="./assets/google.webp" alt="Google" width="41px" height="41px">
-            <h2>&nbsp;Google</h2>
-          </a>
-          <a href="https://github.com/ChiragChrg" target="_blank" title="Github">
-            <i class="fab fa-github fa-2x"></i>
-            <h2>&nbsp;GitHub</h2>
-          </a>
-        </div>
+      <h2>Welcome to Dev Base</h2>
+    </div>
+
+    <div class="intro">
+      <p>
+        Hello,<br />
+        &emsp; I'm Chirag, a Fullstack developer. <br />
+        &emsp; I create exciting Webapps. <br />
+        &emsp; All of my projects are Open-Source, <br>
+        &emsp; So Enjoy! <br />
+      </p>
+      <div class="intro-Links">
+        <a href="https://www.google.com/search?q=%22chiragchrg%22" target="_blank" title="Google">
+          <img src="./assets/google.webp" alt="Google" width="41px" height="41px">
+          <h2>&nbsp;Google</h2>
+        </a>
+        <a href="https://github.com/ChiragChrg" target="_blank" title="Github">
+          <i class="fab fa-github fa-2x"></i>
+          <h2>&nbsp;GitHub</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="myapps">
+      <div class="app-title">
+        <h3>MY PROJECTS <br /></h3>
       </div>
 
-      <div class="myapps">
-        <div class="app-title">
-          <h3>MY PROJECTS <br /></h3>
-        </div>
-
-        <!-- 
+      <!-- 
           <i class="fab fa-html5 html" title="HTML"></i>
           <i class="fab fa-css3 css" title="CSS"></i>
           <i class="fab fa-js-square js" title="JavaScript"></i>
@@ -157,9 +150,9 @@
           <i class="fab fa-node-js node" title="Node JS"></i>
          -->
 
-        <div class="tiles">
-          <!-- Card Template -->
-          <!-- <a class="tile" href="URL_HERE"  title="TITLE_HERE">
+      <div class="tiles">
+        <!-- Card Template -->
+        <!-- <a class="tile" href="URL_HERE"  title="TITLE_HERE">
             <i class="fad fa-mountains fa-5x" style="color: COLOR_HERE;"></i>
             <p class="appTitle">TITLE_HERE</p>
             <p>
@@ -178,237 +171,229 @@
               <i class="fab fa-node-js node" title="Node JS"></i>
             </div>
           </a> -->
-          
-          <a class="tile" href="https://yoatube.netlify.app/"  title="YoaTube">
-            <i class="fab fa-youtube fa-5x" style="color: #FF0000;"></i>
-            <p class="appTitle">YoaTube</p>
-            <p>
-              YoaTube is a clone of Youtube <br />
-              You can search and watch any videos<br />
-              I still prefer YouTube Tho XD.
-            </p>
-            
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fab fa-react react" title="React JS"></i>
-            </div>
-          </a>
 
-          <a class="tile" href="https://srinivas-exam-manager.netlify.app/" target="_blank" title="Srinivas Exam Manager">
-            <img src="./assets/SrinivasLogo.svg" 
-              alt="SEM Logo" 
-              width="77" 
-              height="90"
-            />
-            <p class="appTitle">Srinivas Exam Manager</p>
-            <p>
-              Exam Management software developed <br />
-              for Srinivas University. It generates<br />
-              Halltickets and Marks card for Students.
-            </p>
-            
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fab fa-react react" title="React JS"></i>
-              <i class="fab fa-node-js node" title="Node JS"></i>
-              <i class="fas fa-database sql" title="MySQL"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://pikture.netlify.app/" target="_blank" title="Piktures">
-            <i class="fad fa-mountains fa-5x" style="color: #00adb5;"></i>
-            <p class="appTitle">Piktures</p>
-            <p>
-              Access a wide collection of <br />
-              Vibrant and Colorful images. <br />
-              Search and download any images.
-            </p>
-            
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fab fa-react react" title="React JS"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://sims-arms.000webhostapp.com/" target="_blank" title="ARMS">
-            <i class="fad fa-user-graduate fa-5x" style="color: dodgerblue;"></i>
-            <p class="appTitle">ARMS</p>
-            <p>
-              Trouble finding your Study Materials? <br />
-              ARMS helps you to find PDFs for <br />
-              all subjects in one place. (SIMS - MP)
-            </p>
+        <a class="tile" href="https://yoatube.netlify.app/" title="YoaTube">
+          <i class="fab fa-youtube fa-5x" style="color: #FF0000;"></i>
+          <p class="appTitle">YoaTube</p>
+          <p>
+            YoaTube is a clone of Youtube <br />
+            You can search and watch any videos<br />
+            I still prefer YouTube Tho XD.
+          </p>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fab fa-php php" title="PHP"></i>
-              <i class="fas fa-database sql" title="MySQL"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://filmstack.netlify.app/" target="_blank" title="FilmStack">
-            <i class="fad fa-camera-movie fa-5x" style="color: #2b4eec;"></i>
-            <p class="appTitle">FilmStack</p>
-            <p>
-              More info on your Fav Movie? <br />
-              Filmstack shows all the details! <br />
-              Search any movie globally.
-            </p>
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fab fa-react react" title="React JS"></i>
+          </div>
+        </a>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://daysbeyond.netlify.app/" target="_blank" title="DaysBeyond">
-            <i class="fad fa-calendar-alt fa-5x" style="color: #6600ff;"></i>
-            <p class="appTitle">Days Beyond</p>
-            <p>
-              Shows Yearly Progress<br />
-              and Daily Events held globally. <br />
-              Check what's Special Today!
-            </p>
+        <a class="tile" href="https://srinivas-exam-manager.netlify.app/" target="_blank" title="Srinivas Exam Manager">
+          <img src="./assets/SrinivasLogo.svg" alt="SEM Logo" width="77" height="90" />
+          <p class="appTitle">Srinivas Exam Manager</p>
+          <p>
+            Exam Management software developed <br />
+            for Srinivas University. It generates<br />
+            Halltickets and Marks card for Students.
+          </p>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fas fa-database sql" title="MySQL"></i>
-            </div>
-          </a>
-        
-          <a class="tile" href="https://covidtrax.netlify.app/" target="_blank" title="CovidTrax">
-            <i class="fad fa-shield-virus fa-5x" style="color: dodgerblue;"></i>
-            <p class="appTitle">CovidTrax</p>
-            <p>
-              Search global COVID-19 <br />
-              statistics for each Country and <br />
-              Indian States and Districts
-            </p>
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fab fa-react react" title="React JS"></i>
+            <i class="fab fa-node-js node" title="Node JS"></i>
+            <i class="fas fa-database sql" title="MySQL"></i>
+          </div>
+        </a>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-            </div>
-          </a>
-         
-          <a class="tile" href="https://cookeez.netlify.app/" target="_blank" title="Cookeez">
-            <i class="fas fa-cookie-bite fa-5x" style="color: #8f370e;"></i>
-            <p class="appTitle">Cookeez</p>
-            <p>
-              Find your favorite<br />
-              dishes along with the <br />
-              ingredients for the recipe
-            </p>
+        <a class="tile" href="https://pikture.netlify.app/" target="_blank" title="Piktures">
+          <i class="fad fa-mountains fa-5x" style="color: #00adb5;"></i>
+          <p class="appTitle">Piktures</p>
+          <p>
+            Access a wide collection of <br />
+            Vibrant and Colorful images. <br />
+            Search and download any images.
+          </p>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-              <i class="fab fa-react react" title="React JS"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://klimate.netlify.app/" target="_blank" title="Climate">
-            <i class="fad fa-sun fa-5x" style="color: #ff9b06;"></i>
-            <p class="appTitle">CliMate</p>
-            <p>
-              Get Weather Updates for <br />
-              any location along with <br />
-              Geolocation Support.
-            </p>
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fab fa-react react" title="React JS"></i>
+          </div>
+        </a>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-            </div>
-          </a>
+        <a class="tile" href="https://sims-arms.000webhostapp.com/" target="_blank" title="ARMS">
+          <i class="fad fa-user-graduate fa-5x" style="color: dodgerblue;"></i>
+          <p class="appTitle">ARMS</p>
+          <p>
+            Trouble finding your Study Materials? <br />
+            ARMS helps you to find PDFs for <br />
+            all subjects in one place. (SIMS - MP)
+          </p>
 
-          <a class="tile" href="https://nuklearbrain.netlify.app/" target="_blank" title="Nuklear Brain">
-            <img
-              src="./assets/nuklearbrain.svg"
-              alt="nuklearbrain"
-              width="82px"
-              height="82px"
-            />
-            <p class="appTitle">Nuklear Brain</p>
-            <p>
-              A simple blog with <br />
-              basic interaction elements <br />
-              and multiple pages.
-            </p>
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fab fa-php php" title="PHP"></i>
+            <i class="fas fa-database sql" title="MySQL"></i>
+          </div>
+        </a>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-            </div>
-          </a>
-          
-          <a class="tile" href="https://kalci.netlify.app/" target="_blank" title="Kalci">
-            <i class="fad fa-square-root-alt fa-5x" style="color: #144986;"></i>
-            <p class="appTitle">Kalci</p>
-            <p>
-              A simple Calculator <br />
-              for basic Calcuations <br />
-              and user friendly UI.
-            </p>
+        <a class="tile" href="https://filmstack.netlify.app/" target="_blank" title="FilmStack">
+          <i class="fad fa-camera-movie fa-5x" style="color: #2b4eec;"></i>
+          <p class="appTitle">FilmStack</p>
+          <p>
+            More info on your Fav Movie? <br />
+            Filmstack shows all the details! <br />
+            Search any movie globally.
+          </p>
 
-            <div class="lang">
-              <i class="fab fa-html5 html" title="HTML"></i>
-              <i class="fab fa-css3 css" title="CSS"></i>
-              <i class="fab fa-js-square js" title="JavaScript"></i>
-            </div>
-          </a>
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+          </div>
+        </a>
 
-        </div>
+        <a class="tile" href="https://daysbeyond.netlify.app/" target="_blank" title="DaysBeyond">
+          <i class="fad fa-calendar-alt fa-5x" style="color: #6600ff;"></i>
+          <p class="appTitle">Days Beyond</p>
+          <p>
+            Shows Yearly Progress<br />
+            and Daily Events held globally. <br />
+            Check what's Special Today!
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fas fa-database sql" title="MySQL"></i>
+          </div>
+        </a>
+
+        <a class="tile" href="https://covidtrax.netlify.app/" target="_blank" title="CovidTrax">
+          <i class="fad fa-shield-virus fa-5x" style="color: dodgerblue;"></i>
+          <p class="appTitle">CovidTrax</p>
+          <p>
+            Search global COVID-19 <br />
+            statistics for each Country and <br />
+            Indian States and Districts
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+          </div>
+        </a>
+
+        <a class="tile" href="https://cookeez.netlify.app/" target="_blank" title="Cookeez">
+          <i class="fas fa-cookie-bite fa-5x" style="color: #8f370e;"></i>
+          <p class="appTitle">Cookeez</p>
+          <p>
+            Find your favorite<br />
+            dishes along with the <br />
+            ingredients for the recipe
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+            <i class="fab fa-react react" title="React JS"></i>
+          </div>
+        </a>
+
+        <a class="tile" href="https://klimate.netlify.app/" target="_blank" title="Climate">
+          <i class="fad fa-sun fa-5x" style="color: #ff9b06;"></i>
+          <p class="appTitle">CliMate</p>
+          <p>
+            Get Weather Updates for <br />
+            any location along with <br />
+            Geolocation Support.
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+          </div>
+        </a>
+
+        <a class="tile" href="https://nuklearbrain.netlify.app/" target="_blank" title="Nuklear Brain">
+          <img src="./assets/nuklearbrain.svg" alt="nuklearbrain" width="82px" height="82px" />
+          <p class="appTitle">Nuklear Brain</p>
+          <p>
+            A simple blog with <br />
+            basic interaction elements <br />
+            and multiple pages.
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+          </div>
+        </a>
+
+        <a class="tile" href="https://kalci.netlify.app/" target="_blank" title="Kalci">
+          <i class="fad fa-square-root-alt fa-5x" style="color: #144986;"></i>
+          <p class="appTitle">Kalci</p>
+          <p>
+            A simple Calculator <br />
+            for basic Calcuations <br />
+            and user friendly UI.
+          </p>
+
+          <div class="lang">
+            <i class="fab fa-html5 html" title="HTML"></i>
+            <i class="fab fa-css3 css" title="CSS"></i>
+            <i class="fab fa-js-square js" title="JavaScript"></i>
+          </div>
+        </a>
+
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="social">
-        <a href="https://www.facebook.com/ChiragChrg" id="f" target="_blank" title="Facebook">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/chiragchrg/" id="i" target="_blank" title="Instagram">
-          <i class="fab fa-instagram fa-2x"></i>
-          <!-- <i class="fa-brands fa-instagram fa-2x"></i> -->
-        </a>
-        <a href="https://twitter.com/ChiragChrg1" id="t" target="_blank" title="Twitter">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-      </div>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/ChiragChrg" id="f" target="_blank" title="Facebook">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/chiragchrg/" id="i" target="_blank" title="Instagram">
+        <i class="fab fa-instagram fa-2x"></i>
+        <!-- <i class="fa-brands fa-instagram fa-2x"></i> -->
+      </a>
+      <a href="https://twitter.com/ChiragChrg1" id="t" target="_blank" title="Twitter">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+    </div>
 
-      <p>&#169; Copyright 2020-2022 ChiragChrg</p>
-    </footer>
+    <p>&#169; Copyright 2020-2022 ChiragChrg</p>
+  </footer>
 
-    <!-- Null IDs -->
-    <div id="abtTheme"></div>
+  <!-- Null IDs -->
+  <div id="abtTheme"></div>
 
-    <script>
-      //Switch Dektop/Moblie Buttons
-      const mediaQuery = window.matchMedia("(max-width: 395px)");
-      const DesktopInstall = document.querySelector(".deskPwa");
-      const MobileInstall = document.querySelector(".mobPwa");
-      if (mediaQuery.matches) {
-        MobileInstall.classList.toggle("pwaButtonHolder");
-      } else {
-        DesktopInstall.classList.toggle("pwaButtonHolder");
-      }
-    </script>
-    <script defer async src="/js/app.js" title="JavaScript"></script>
-    <script defer async src="/PWA/PWA.js" title="JavaScript"></script>
-  </body>
+  <script>
+    //Switch Dektop/Moblie Buttons
+    const mediaQuery = window.matchMedia("(max-width: 395px)");
+    const DesktopInstall = document.querySelector(".deskPwa");
+    const MobileInstall = document.querySelector(".mobPwa");
+    if (mediaQuery.matches) {
+      MobileInstall.classList.toggle("pwaButtonHolder");
+    } else {
+      DesktopInstall.classList.toggle("pwaButtonHolder");
+    }
+  </script>
+  <script defer async src="/js/app.js" title="JavaScript"></script>
+  <script defer async src="/PWA/PWA.js" title="JavaScript"></script>
+</body>
+
 </html>

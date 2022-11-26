@@ -1,15 +1,24 @@
-const CacheName = "V-3.1";
-const CacheList = [
-  "/",
-  "css/about.css",
-  "css/style.css",
-  "/css/Mobile/mobile.css",
-  "/js/app.js",
-  "/js/icon.js",
-  "index.html",
-  "about.html",
-  "manifest.json",
-];
+//Installing Service Worker
+self.addEventListener("install", event => { });
+
+//Fetching Service Worker
+self.addEventListener("fetch", event => { });
+
+//Activating Service Worker
+self.addEventListener("activate", event => { });
+
+// const CacheName = "V-3.1";
+// const CacheList = [
+//   "/",
+//   "css/about.css",
+//   "css/style.css",
+//   "/css/Mobile/mobile.css",
+//   "/js/app.js",
+//   "/js/icon.js",
+//   "index.html",
+//   "about.html",
+//   "manifest.json",
+// ];
 
 // "/PWA/offline.html",
 // "/PWA/PWA.js",
@@ -31,29 +40,29 @@ const CacheList = [
 // "assets/fonts/quicksand-v28-latin-regular.woff",
 // "assets/fonts/quicksand-v28-latin-regular.woff2",
 
-//Installing Service Worker
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CacheName).then((cache) => {
-      console.log("Opened cache");
-      return cache.addAll(CacheList);
-    })
-  );
-});
+// //Installing Service Worker
+// self.addEventListener("install", (event) => {
+//   event.waitUntil(
+//     caches.open(CacheName).then((cache) => {
+//       console.log("Opened cache");
+//       return cache.addAll(CacheList);
+//     })
+//   );
+// });
 
-//Fetching Service Worker
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return (
-        response ||
-        fetch(event.request).catch(() => caches.match("/PWA/offline.html"))
-      );
-    })
-  );
-});
+// //Fetching Service Worker
+// self.addEventListener("fetch", (event) => {
+//   event.respondWith(
+//     caches.match(event.request).then((response) => {
+//       return (
+//         response ||
+//         fetch(event.request).catch(() => caches.match("/PWA/offline.html"))
+//       );
+//     })
+//   );
+// });
 
-//Activating Service Worker
-self.addEventListener("activate", (event) => {
- // Prev Cache deleted on PWA.js  
-});
+// //Activating Service Worker
+// self.addEventListener("activate", (event) => {
+//  // Prev Cache deleted on PWA.js
+// });
