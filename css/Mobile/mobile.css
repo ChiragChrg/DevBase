@@ -326,8 +326,13 @@
   }
 
   .intro .intro-Links a img{
-    width: 30px;
-    height: 30px;
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .intro .intro-Links a i{
+    font-size: 2.25em;
+    aspect-ratio: 1;
   }
 
   .myapps {

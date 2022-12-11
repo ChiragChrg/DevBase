@@ -305,6 +305,16 @@
     cursor: pointer;
   }
 
+  .intro .intro-Links a img{
+    width: 40px;
+    aspect-ratio: 1;
+  }
+
+  .intro .intro-Links a i{
+    font-size: 2.065em;
+    aspect-ratio: 1;
+  }
+
   .myapps {
     display: flex;
     flex-direction: column;
