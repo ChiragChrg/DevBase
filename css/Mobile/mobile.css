@@ -404,6 +404,10 @@
     font-size: 1.5em;
   }
 
+  .lang img{
+    padding: 0.5em;
+  }
+
   .html {
     color: #e34c26;
   }

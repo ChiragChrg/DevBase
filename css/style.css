@@ -427,10 +427,13 @@
     padding-top: 1em;
   }
 
-  .lang i,
-  .lang img {
+  .lang i {
     padding: 0.5em;
     font-size: 1.5em;
+  }
+
+  .lang img{
+    padding: 0.5em;
   }
 
   .html {
