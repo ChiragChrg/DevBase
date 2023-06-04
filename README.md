@@ -10,7 +10,7 @@
 ![Devbase Preview](./assets/Preview.png)
 
 #### Languages
-<div style="display: flex; justify-content: center; align-items: center; padding: 1em;">
+<div align="center">
       <img
         alt="HTML5"
         title="HTML"
